@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,32 +7,26 @@
   padding: 0;
   max-width: 100%;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
   direction: ltr;
   user-select: text;
 }
-
 :root {
   --main-color-: #2196f3;
   --main-transition: ease-out 0.3s;
   --main-padding-: 60px 0;
 }
-
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -58,7 +51,6 @@ a {
     width: 1170px;
   }
 }
-
 /* Global varible */
 .section-header {
   font-size: 30px;
@@ -125,7 +117,6 @@ a {
   z-index: -1;
   -webkit-animation: right-move-anmiation 0.5s linear forwards;
 }
-
 /*Spike Appearance*/
 .spikes {
   position: relative;
@@ -142,7 +133,6 @@ a {
   z-index: 1;
   background-size: 30px 30px;
 }
-
 /*Animation part*/
 @keyframes left-move-anmiation {
   50% {
@@ -178,7 +168,6 @@ a {
     -o-border-radius: 0;
   }
 }
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 0;
@@ -203,8 +192,7 @@ a {
 ::-webkit-scrollbar-track {
   background-color: #ededed;
 }
-/*End basic control for website*/
-
+/*End basic control for webpage*/
 /*Navagition Bar*/
 .header {
   background-color: white;
@@ -370,25 +358,11 @@ a {
   margin-right: 10px;
 }
 /* End Header */
-
 /* Start landing Section */
 .landing-section {
   position: relative;
 }
 .landing-section::before {
-  /* content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #ececec;
-  height: calc(100% - 90px);
-  z-index: -10;
-  transform: skewY(6deg);
-  -webkit-transform: skewY(6deg);
-  -moz-transform: skewY(6deg);
-  -ms-transform: skewY(6deg);
-  -o-transform: skewY(6deg);
-  transform-origin: top right; */
   content: "";
   position: absolute;
   width: 100%;
@@ -416,7 +390,6 @@ a {
 .landing-section .arrow-toDown {
   position: relative;
 }
-
 .landing-section .text {
   flex: 1;
 }
@@ -436,7 +409,6 @@ a {
   .landing-section .text {
     text-align: center;
   }
-
   .landing-section .text p {
     line-height: 1.75;
     text-align: center;
@@ -474,7 +446,6 @@ a {
   -o-transition: var(--main-transition);
 }
 /* End Landing Section */
-
 /*Start Article Section*/
 .articles-container {
   padding: var(--main-padding-);
@@ -524,15 +495,12 @@ p,
   border-top: 1px solid var(--main-color-);
   top: 0;
 }
-/*Anmaition needed----*/
 /* End article section  */
-
 /* Start Gallery section */
 .gallery-container {
   padding: var(--main-padding-);
   background-color: #ececec;
 }
-
 .gallery-container .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -543,7 +511,6 @@ p,
   background-color: #ededed;
   box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%),
     0px 2px 4px 0px rgb(0 0 0 / 12%);
-  /* X , Y , blurry */
 }
 .gallery-container .box .image img {
   width: 100%;
@@ -571,7 +538,6 @@ p,
   -o-border-radius: 10%;
 }
 /* End Gallery section */
-
 /* Start Features section */
 .features {
   padding: var(--main-padding-);
@@ -640,7 +606,6 @@ p {
   font-weight: 900;
   position: relative;
 }
-
 .features .txt h3::before {
   position: absolute;
   content: "";
@@ -700,7 +665,6 @@ p {
   -o-transition: var(--main-transition);
 }
 /* End Features section */
-
 /* Start testimonials Section  */
 .testimonials {
   padding: var(--main-padding-);
@@ -764,7 +728,6 @@ p {
   padding: 0;
 }
 /* End testimonials Section  */
-
 /* Start Services Section */
 .services {
   padding: var(--main-padding-);
@@ -856,7 +819,6 @@ p {
   z-index: 1;
 }
 /* End Services Section   */
-
 /* Start Team Member Section */
 .team-member {
   padding: var(--main-padding-);
@@ -957,9 +919,7 @@ p {
 .team-member .box .information h3 {
   color: var(--main-color-);
 }
-
 /* End Team Leader section */
-
 /* Start Skills section */
 .skills {
   padding: var(--main-padding-);
@@ -1016,7 +976,6 @@ p {
   background-color: var(--main-color-);
 }
 /* End Skills section */
-
 /*Start How It Work Section*/
 .how-it-work {
   padding: var(--main-padding-);
@@ -1094,7 +1053,6 @@ p {
   height: 100%;
 }
 /*End How It Work Section*/
-
 /* Start Lastest Events Section */
 .lastest-events {
   background-color: #ffffff;
@@ -1274,7 +1232,6 @@ p {
   color: #ffffff;
 }
 /* End Lastest Events Section */
-
 /* Start Pricing Plan Section */
 .pricing-plan {
   padding: var(--main-padding-);
@@ -1389,7 +1346,6 @@ p {
   color: #ffffff;
 }
 /* End Pricing Plan Section */
-
 /* Start Top Video Section */
 .top-video {
   position: relative;
@@ -1452,7 +1408,6 @@ p {
   font-size: 18px;
 }
 /* End Top Video Section  */
-
 /* Start Stats Section */
 .stats {
   padding: var(--main-padding-);
@@ -1538,7 +1493,6 @@ p {
   -o-transform: skew(-15deg);
 }
 /* End Stats Section */
-
 /* Start Contact Form */
 .contact-form {
   position: relative;
@@ -1699,7 +1653,6 @@ p {
   color: #ffffff;
 }
 /* End contact Form */
-
 /* Start Footer Section */
 .footer {
   background-color: #191919;
@@ -1861,10 +1814,4 @@ p {
 .footer .go-to-up-anchor-tag:hover {
   color: #ededed;
   background-color: #87b332;
-}
-/* End Footer Section  */
-/*End blog Css3 Code*/
-/*
- Increase WebSite performence . 
- */
-/* Commmit to gitHub*/
+} /* End Footer Section  */
