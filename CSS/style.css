@@ -181,7 +181,7 @@ a {
   -o-border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: red;
+  background-color: #0077ff;
   width: 15px;
   border-radius: 0;
   -webkit-border-radius: 0;
@@ -190,7 +190,7 @@ a {
   -o-border-radius: 0;
 }
 ::-webkit-scrollbar-track {
-  background-color: #ededed;
+  background-color: #d5d5d5;
 }
 /*End basic control for webpage*/
 /*Navagition Bar*/
@@ -376,7 +376,7 @@ a {
   -ms-transform: skewY(6deg);
   -o-transform: skewY(6deg);
   transform-origin: top right;
-  top: -140px;
+  top: -200px;
 }
 .landing-section .image > img {
   width: 550px;
@@ -392,6 +392,11 @@ a {
 }
 .landing-section .text {
   flex: 1;
+}
+@media (max-width: 991px) {
+  .landing-section .arrow-toDown {
+    top: -40px;
+  }
 }
 .landing-section .text > h1 {
   font-weight: 900;
@@ -690,8 +695,8 @@ p {
 }
 .testimonials .testimonials-box > img {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   right: -10px;
   top: 11%;
   border-radius: 50%;
@@ -1388,7 +1393,12 @@ p {
   cursor: pointer;
 }
 .top-video .list ul li:hover {
-  color: #0479d7;
+  background-color: #0075ff;
+  transition: var(--main-transition);
+  color: white;
+}
+.top-video .list ul span:hover {
+  color: white;
 }
 .top-video .list ul span {
   color: var(--main-color-);
