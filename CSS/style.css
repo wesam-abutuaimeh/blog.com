@@ -222,6 +222,9 @@ a {
   justify-content: center;
   align-items: center;
 }
+i.fas.fa-blog {
+  padding-right: 10px;
+}
 @media (max-width: 767px) {
   .header .logo {
     width: 100%;
