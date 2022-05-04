@@ -655,6 +655,7 @@ p {
 }
 
 .features button {
+  display: block;
   color: var(--main-color-);
   padding: 10px 20px;
   text-transform: uppercase;
