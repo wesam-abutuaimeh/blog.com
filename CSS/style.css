@@ -1803,18 +1803,18 @@ p {
   margin: 0 7px 0 7px;
 }
 .footer .go-to-up-anchor-tag {
-  display: block;
-  background-color: #000;
-  color: #e7e71c;
+  color: var(--main-color-);
   width: 50px;
-  margin: 10px 0 0 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 50%;
   position: relative;
-  left: 50%;
-  top: -10px;
-  font-size: 14px;
-  text-align: center;
-  line-height: 20px;
-  transform: translateX(-50%);
+  left: 90%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   transition: var(--main-transition);
   -webkit-transition: var(--main-transition);
   -moz-transition: var(--main-transition);
@@ -1822,6 +1822,7 @@ p {
   -o-transition: var(--main-transition);
 }
 .footer .go-to-up-anchor-tag:hover {
-  color: #ededed;
+  color: #f9f9f9;
   background-color: #87b332;
+  font-size: 30px;
 } /* End Footer Section  */
