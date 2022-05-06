@@ -18,7 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-family: "Tajawal", sans-serif;
   direction: ltr;
-  user-select: text;
+  user-select:text;
 }
 :root {
   --main-color-: #2196f3;
@@ -59,6 +59,7 @@ a {
 .section-header {
   font-size: 30px;
   font-weight: 500;
+  text-transform: uppercase;
   margin: 100px auto;
   border: 2px solid #000;
   width: fit-content;
@@ -999,6 +1000,7 @@ p {
   justify-content: space-between;
   align-items: center;
   color: rgba(0, 0, 0, 0.932);
+  text-transform: uppercase;
 }
 .skills .skill h3 span {
   font-size: 13px;
@@ -1014,7 +1016,7 @@ p {
 }
 .skills .skill .progress {
   height: 30px;
-  background-color: #eee;
+  background-color: #f9f9f9;
   position: relative;
 }
 .skills .skill .progress span {
@@ -1187,6 +1189,9 @@ p {
 .lastest-events .txt h3 {
   text-align: center;
   font-size: 25px;
+}
+.lastest-events .txt h3 span{
+  color: #fc0c3b;
 }
 .lastest-events .txt p {
   text-align: center;
@@ -1434,6 +1439,7 @@ p {
   flex-direction: column;
   margin: 10px 0 10px 0;
   border-bottom: 1px solid #ccc;
+  line-height: 1.7;
   cursor: pointer;
 }
 .top-video .list ul li:hover {
