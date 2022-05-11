@@ -1,15 +1,15 @@
 # Blog-Template .
 
-## By : Developer : Wesam Hatme Abu Tuaimeh .
+## By Developer : Wesam Hatme Abu Tuaimeh .
 
 ### The sketch was taken from the Elzero Web School channel.
 
 ### Demo Live :\
 
-https://wesamhtiama.github.io/personal-blog-me.com/Html/index.html
+=> https://wesam.abutuaimeh.github.io/personal-blog-me.com/Html/index.html <=
 
-This Webpage Implementation Using Html5 and Css3 Only .
-<br/>
+<br/><br/>
+
 ![Screenshot](Media/readme-img.jpg)
 <br/>
 
