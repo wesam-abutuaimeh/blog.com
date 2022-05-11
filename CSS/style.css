@@ -405,6 +405,7 @@ i.fas.fa-blog {
   font-weight: 900;
   color: var(--main-color-);
   letter-spacing: 1px;
+  text-transform: capitalize;
 }
 .landing-section .text > p {
   max-width: 466px;
@@ -1182,6 +1183,7 @@ p {
   margin: 40px auto;
 }
 .lastest-events .txt h3 {
+  text-decoration: underline wavy #fc0c3b 2px;
   text-align: center;
   font-size: 25px;
 }
