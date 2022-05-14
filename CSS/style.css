@@ -18,7 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-family: "Tajawal", sans-serif;
   direction: ltr;
-  user-select:text;
+  user-select: text;
 }
 :root {
   --main-color-: #2196f3;
@@ -33,7 +33,7 @@ a {
 }
 .container {
   margin: 0 auto;
-  padding: 0px 15px ;
+  padding: 0px 15px;
 }
 /*Main Media Quary*/
 @media (min-width: 768px) {
@@ -130,7 +130,7 @@ a {
   width: 100%;
   height: 30px;
   background-image: linear-gradient(135deg, white 25%, transparent 25%)
-  linear-gradient(225deg, white 25%, transparent 25%);
+    linear-gradient(225deg, white 25%, transparent 25%);
   z-index: 1;
   background-size: 30px 30px;
 }
@@ -1187,7 +1187,7 @@ p {
   text-align: center;
   font-size: 25px;
 }
-.lastest-events .txt h3 span{
+.lastest-events .txt h3 span {
   color: #fc0c3b;
 }
 .lastest-events .txt p {
@@ -1279,7 +1279,7 @@ p {
   -o-transition: var(--main-transition);
 }
 .lastest-events .subscribe-form input[type="submit"]:hover {
-  background-color: var(--main-color-);
+  background-image: linear-gradient(to right, #7450fe, #21d397);
   color: #ffffff;
 }
 /* End Lastest Events Section */
@@ -1393,7 +1393,7 @@ p {
   -o-border-radius: 6px;
 }
 .pricing-plan .price-plan-box a:hover {
-  background-color: var(--main-color-);
+  background-image: linear-gradient(to right, #7450fe, #21d397);
   color: #ffffff;
 }
 /* End Pricing Plan Section */
@@ -1706,7 +1706,8 @@ p {
   line-height: 0;
 }
 .contact-form form input[type="submit"]:hover {
-  background-color: var(--main-color-);
+  /* background-color: var(--main-color-); */
+  background-image: linear-gradient(to right, #7450fe, #21d397);
   color: #ffffff;
 }
 /* End contact Form */
