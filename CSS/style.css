@@ -887,7 +887,7 @@ p {
   position: absolute;
   content: "";
   height: 100%;
-  width: calc(100% - 50px);
+  width: calc(100% - 35px);
   top: 0;
   right: 0;
   background-color: #ececec;
@@ -903,20 +903,7 @@ p {
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
 }
-.team-member .box::after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  top: 0;
-  right: 0;
-  background-color: #ddd;
-  z-index: -1;
-  transition: var(--main-transition);
-  -webkit-transition: var(--main-transition);
-  -moz-transition: var(--main-transition);
-  -ms-transition: var(--main-transition);
-  -o-transition: var(--main-transition);
-}
+
 .team-member .box img {
   width: calc(100% - 60px);
   border-radius: 6px;
@@ -934,9 +921,6 @@ p {
   filter: grayscale(10);
   -webkit-filter: grayscale(10);
 }
-.team-member p {
-  text-align: start;
-}
 .team-member .data {
   display: flex;
   align-items: center;
@@ -949,8 +933,12 @@ p {
   align-items: center;
 }
 .team-member .data .social-links a {
-  margin-top: 10px;
+  font-size: 18px;
+  margin-top: 15px;
   color: #777;
+}
+.team-member .data .social-links a:hover {
+  color: #0075ff;
 }
 .team-member .box .information h3,
 p {
@@ -961,6 +949,7 @@ p {
   text-align: start;
   padding: 10px;
   line-height: 1.7;
+  text-align: center;
 }
 .team-member .box .information h3 {
   color: var(--main-color-);
@@ -1245,6 +1234,7 @@ p {
   border-radius: 20px;
   flex: 1;
   caret-color: var(--main-color-);
+  color: var(--main-color-);
   background-color: #ffffffbf;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
