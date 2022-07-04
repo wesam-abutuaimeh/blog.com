@@ -31,6 +31,10 @@ ul {
 a {
   text-decoration: none;
 }
+::selection {
+  color: #ffffff;
+  background-color: #347bb4;
+}
 .container {
   margin: 0 auto;
   padding: 0px 15px;
@@ -413,6 +417,7 @@ i.fas.fa-blog {
   line-height: 1.75;
   font-size: 20px;
   padding: 0;
+  text-align: start;
 }
 @media (max-width: 991px) {
   .landing-section .text {
@@ -420,7 +425,7 @@ i.fas.fa-blog {
   }
   .landing-section .text p {
     line-height: 1.75;
-    text-align: center;
+    text-align: start;
     padding: 0;
     margin: 50px auto;
   }
@@ -946,10 +951,9 @@ p {
   font-size: 16px;
   color: #777;
   text-transform: capitalize;
-  text-align: start;
   padding: 10px;
   line-height: 1.7;
-  text-align: center;
+  text-align: start;
 }
 .team-member .box .information h3 {
   color: var(--main-color-);

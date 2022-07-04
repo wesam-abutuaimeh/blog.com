@@ -1,6 +1,6 @@
 # Blog-Template .
 
-## By Developer : Wesam Hatme Abu Tuaimeh .
+## By Developer : Wesam Hatme Abu Taima .
 
 ### The sketch was taken from the Elzero Web School channel.
 
