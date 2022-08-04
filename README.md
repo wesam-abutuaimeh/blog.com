@@ -5,10 +5,7 @@
 ### The sketch was taken from the Elzero Web School channel.
 
 ### Demo Live :)
-[Blog Link](#wesam-abutuaimeh.github.io/personal-blog-me.com/Html)
-
-<a></a>
-=> wesam-abutuaimeh.github.io/personal-blog-me.com/Html <=
+[Blog-Template Link](#wesam-abutuaimeh.github.io/personal-blog-me.com/Html)
 
 <br/><br/>
 ![Screenshot](Media/author.jpg)
