@@ -4,13 +4,12 @@
 
 ### The sketch was taken from the Elzero Web School channel.
 
-### Demo Live :\
+### Demo Live :)
 
 => wesam-abutuaimeh.github.io/personal-blog-me.com/Html <=
 
 <br/><br/>
-
-![Screenshot](Media/readme-img.jpg)
+![Screenshot](Media/author.jpg)
 <br/>
 
-###### Good Luck .
+###### With my Best Regards ❤

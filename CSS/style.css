@@ -364,8 +364,8 @@ i.fas.fa-blog {
 .header .mega-menu .links li a i {
   margin-right: 10px;
 }
-/* End Header */
-/* Start landing Section */
+/* End Header Style */
+/* Start landing Sectio Style*/
 .landing-section {
   position: relative;
 }
@@ -459,8 +459,8 @@ i.fas.fa-blog {
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
 }
-/* End Landing Section */
-/*Start Article Section*/
+/* End Landing Section Style*/
+/*Start Article Section Style*/
 .articles-container {
   padding: var(--main-padding-);
   background-color: #ffffff;
@@ -869,8 +869,8 @@ p {
   text-transform: capitalize;
   letter-spacing: 1px;
 }
-/* End Services Section   */
-/* Start Team Member Section */
+/* End Services Section Style*/
+/* Start Team Member Section Style*/
 .team-member {
   padding: var(--main-padding-);
   background-color: #ffffff;
@@ -958,8 +958,8 @@ p {
 .team-member .box .information h3 {
   color: var(--main-color-);
 }
-/* End Team Leader section */
-/* Start Skills section */
+/* End Team Leader section Style */
+/* Start Skills section Style*/
 .skills {
   padding: var(--main-padding-);
   background-color: #ffffff;
@@ -1015,8 +1015,8 @@ p {
   top: 0;
   background-color: var(--main-color-);
 }
-/* End Skills section */
-/*Start How It Work Section*/
+/* End Skills section Style */
+/*Start How It Work Section Style*/
 .how-it-work {
   padding: var(--main-padding-);
   background-color: #ececec;
@@ -1276,8 +1276,8 @@ p {
   background-image: linear-gradient(to right, #7450fe, #21d397);
   color: #ffffff;
 }
-/* End Lastest Events Section */
-/* Start Pricing Plan Section */
+/* End Lastest Events Section Style */
+/* Start Pricing Plan Section Style */
 .pricing-plan {
   padding: var(--main-padding-);
   background-color: #ececec;
@@ -1390,8 +1390,8 @@ p {
   background-image: linear-gradient(to right, #7450fe, #21d397);
   color: #ffffff;
 }
-/* End Pricing Plan Section */
-/* Start Top Video Section */
+/* End Pricing Plan Section Style */
+/* Start Top Video Section Style */
 .top-video {
   position: relative;
   background-color: #ffffff;
@@ -1458,8 +1458,8 @@ p {
   padding: 20px;
   font-size: 18px;
 }
-/* End Top Video Section  */
-/* Start Stats Section */
+/* End Top Video Section Style  */
+/* Start Stats Section Style */
 .stats {
   padding: var(--main-padding-);
   background-image: url(../Media/stats.jpg);
@@ -1543,8 +1543,8 @@ p {
   -ms-transform: skew(-15deg);
   -o-transform: skew(-15deg);
 }
-/* End Stats Section */
-/* Start Contact Form */
+/* End Stats Section Style*/
+/* Start Contact Form Style*/
 .contact-form {
   position: relative;
 }
@@ -1704,8 +1704,8 @@ p {
   background-image: linear-gradient(to right, #7450fe, #21d397);
   color: #ffffff;
 }
-/* End contact Form */
-/* Start Footer Section */
+/* End contact Form Style */
+/* Start Footer Section Style */
 .footer {
   background-color: #191919;
   padding: 70px 0 0;
@@ -1844,27 +1844,29 @@ p {
   color: rgba(192, 17, 17, 0.712);
   margin: 0 7px 0 7px;
 }
-.footer .go-to-up-anchor-tag {
-  color: var(--main-color-);
+/* End Footer Section Style */
+/* Start Scroll Btn Style */
+.to-top-butotn {
   width: 50px;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  border-radius: 50%;
-  position: relative;
-  left: 90%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: var(--main-transition);
-  -webkit-transition: var(--main-transition);
-  -moz-transition: var(--main-transition);
-  -ms-transition: var(--main-transition);
-  -o-transition: var(--main-transition);
+  background-color: var(--main-color-);
+  color: #f5f5f5;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10000;
+  cursor: pointer;
+  display: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
-.footer .go-to-up-anchor-tag:hover {
-  color: #f9f9f9;
-  background-color: #87b332;
-  font-size: 30px;
+.to-top-button .fa-long-arrow-alt-right {
+  color: #ffffff;
+  font-size: 18px;
 }
+/* End Scroll Btn Style*/

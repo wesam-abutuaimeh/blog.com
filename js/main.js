@@ -51,3 +51,18 @@ document.forms[1].onsubmit = function (event) {
     event.preventDefault();
   }
 };
+
+let scroolBtn = document.querySelector(".to-top-butotn");
+window.onscroll = function () {
+  if (window.scrollY >= 623) {
+    console.log("showed");
+    scroolBtn.style.display = "block";
+  } else scroolBtn.style.display = "none";
+};
+scroolBtn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    right: 4,
+    behavior: "smooth",
+  });
+};
