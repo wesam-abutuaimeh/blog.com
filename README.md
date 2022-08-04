@@ -11,4 +11,4 @@
 <br/><br/>
 ![Screenshot](Media/author.jpg)
 <br/>
-<h6 style="text-algin:center">With my Best Regards ❤</h6>
+<h6 style="text-align:center">With my Best Regards ❤</h6>
