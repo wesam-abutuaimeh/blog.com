@@ -1854,16 +1854,30 @@ p {
   border: none;
   font-weight: bold;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   position: fixed;
   right: 20px;
   bottom: 20px;
   z-index: 10000;
   cursor: pointer;
   display: none;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.to-top-butotn:hover {
+  background-color: #0479d7;
+  color: wheat;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
 }
 .to-top-button .fa-long-arrow-alt-right {
   color: #ffffff;
