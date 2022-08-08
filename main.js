@@ -1,5 +1,5 @@
 console.log(
-  "%cWesam%cBlog",
+  "%cWelcom To Wesam%cBlog",
   "color:red; font-size:40px",
   "background-color:blue;color:white; font-size:40px"
 );
