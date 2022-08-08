@@ -55,7 +55,6 @@ document.forms[1].onsubmit = function (event) {
 let scroolBtn = document.querySelector(".to-top-butotn");
 window.onscroll = function () {
   if (window.scrollY >= 623) {
-    console.log("showed");
     scroolBtn.style.display = "block";
   } else scroolBtn.style.display = "none";
 };
