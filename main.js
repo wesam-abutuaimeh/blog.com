@@ -1,3 +1,6 @@
+"use-strict"; /* strict mode */
+
+/* Welcome phrase to the user who opens the browser console */
 console.log(
   "%cWelcom To Wesam%cBlog",
   "color:red; font-size:40px",
@@ -17,6 +20,7 @@ document.forms[0].onsubmit = function (event) {
     console.log("prevent");
   }
 };
+
 /* Request A Discount Form Validation */
 document.forms[1].onsubmit = function (event) {
   let name = false;
@@ -52,6 +56,7 @@ document.forms[1].onsubmit = function (event) {
   }
 };
 
+/* Scroll To Top Button */
 let scroolBtn = document.querySelector(".to-top-butotn");
 window.onscroll = function () {
   if (window.scrollY >= 623) {
@@ -65,3 +70,32 @@ scroolBtn.onclick = function () {
     behavior: "smooth",
   });
 };
+
+/* colors option from setting box */
+document.querySelector(".icon").onclick = (_) => {
+  const settingBox = document.querySelector(".setting-box");
+  settingBox.classList.toggle("show");
+};
+
+if (localStorage.getItem("colors")) {
+  document.documentElement.style.setProperty(
+    "--main-color-",
+    localStorage.getItem("colors")
+  );
+  console.log(
+    `The Hex Code For The Color I present Now Is \`${localStorage.getItem(
+      "colors"
+    )}\``
+  );
+}
+
+let colorsList = document.querySelectorAll(".colors-options li");
+colorsList.forEach((li) => {
+  li.addEventListener("click", (event) => {
+    document.documentElement.style.setProperty(
+      "--main-color-",
+      event.target.dataset.color
+    );
+    localStorage.setItem("colors", event.target.dataset.color);
+  });
+});
