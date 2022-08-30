@@ -103,7 +103,7 @@ colorsList.forEach((li) => {
 // TODO  - > Where Page Loading Display popup full screen (Document.readyState);
 const loader = document.querySelector(".loader");
 if (
-  document.readyState === "loading" ||
+  document.readyState === "loading" &&
   document.readyState === "interactive"
 ) {
   loader.classList.add("show");
