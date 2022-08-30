@@ -100,15 +100,31 @@ colorsList.forEach((li) => {
   });
 });
 
-// TODO  - > Where Page Loading Display popup full screen (Document.readyState);
+/* Page Loading popup */
 const loader = document.querySelector(".loader");
-if (document.readyState !== "complete") {
-  loader.classList.add("show");
-  console.log("add");
-}
-/*
- else {
-  loader.classList.add("remove");
-  console.log("removed");
-}
-*/
+document.onreadystatechange = () => {
+  switch (document.readyState) {
+    case "complete":
+      loader.classList.add("remove");
+      let welcomePhrase = document.createElement("p");
+      welcomePhrase.className = "welcome-phrase";
+      welcomePhrase.style.cssText =
+        "position: absolute; top: 0; left: 50%; transform: translateX(-50%); display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; background-image: var(--main-btn-gradient); color: #FFFFFF; font-weight: 600; letter-spacing: 3px; transition:0.3s ease-in-out";
+      welcomePhrase.appendChild(
+        document.createTextNode(
+          `Welcome, I wish you a nice trip in my beautiful site`
+        )
+      );
+      const welcomePhraseAppend = document.body.appendChild(welcomePhrase);
+      setTimeout(() => {
+        welcomePhraseAppend.style.display = "none";
+      }, 2000);
+      break;
+    case "interactive":
+      loader.classList.add("show");
+      break;
+    case "loading":
+      loader.classList.add("show");
+      break;
+  }
+};

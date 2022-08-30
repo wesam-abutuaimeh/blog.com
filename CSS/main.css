@@ -28,6 +28,8 @@ body {
   --paragraph-color: #7b7b7b;
   --main-transition: ease-out 0.3s;
   --main-padding: 60px 0;
+  --main-btn-gradient: linear-gradient(to right, #7450fe, #21d397);
+  --spikes-gradient: linear-gradient(135deg, white 25%, transparent 25%) linear-gradient(225deg, white 25%, transparent 25%);
 }
 
 ul {
@@ -152,7 +154,7 @@ a {
   top: 0;
   width: 100%;
   height: 30px;
-  background-image: linear-gradient(135deg, white 25%, transparent 25%) linear-gradient(225deg, white 25%, transparent 25%);
+  background-image: var(--spikes-gradients);
   z-index: 1;
   background-size: 30px 30px;
 }
@@ -426,12 +428,12 @@ i.fas.fa-blog {
   position: fixed;
   left: -200px;
   top: 0;
-  z-index: 10000;
   transition: var(--main-transition);
   -webkit-transition: var(--main-transition);
   -moz-transition: var(--main-transition);
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
+  z-index: 100;
 }
 
 .setting-box.show {
@@ -1558,7 +1560,7 @@ p {
 }
 
 .lastest-events .subscribe-form input[type="submit"]:hover {
-  background-image: linear-gradient(to right, #7450fe, #21d397);
+  background-image: var(--main-btn-gradient);
   color: #ffffff;
 }
 
@@ -1688,7 +1690,7 @@ p {
 }
 
 .pricing-plan .price-plan-box a:hover {
-  background-image: linear-gradient(to right, #7450fe, #21d397);
+  background-image: var(--main-btn-gradient);
   color: #ffffff;
 }
 
@@ -2042,8 +2044,7 @@ p {
 }
 
 .contact-form form input[type="submit"]:hover {
-  /* background-color: var(--main-color); */
-  background-image: linear-gradient(to right, #7450fe, #21d397);
+  background-image: var(--main-btn-gradient);
   color: #ffffff;
 }
 
@@ -2218,6 +2219,7 @@ p {
 }
 
 /* End Footer Section Style */
+
 /* Start Scroll Btn Style */
 .to-top-butotn {
   width: 50px;
@@ -2368,3 +2370,5 @@ p {
     transform: translateY(250%);
   }
 }
+
+/* End Loading animation Style */
