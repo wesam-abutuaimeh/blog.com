@@ -99,3 +99,5 @@ colorsList.forEach((li) => {
     localStorage.setItem("colors", event.target.dataset.color);
   });
 });
+
+// TODO  - > Where Page Loading Display popup full screen (Document.readyState);
