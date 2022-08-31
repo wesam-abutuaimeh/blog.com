@@ -64,7 +64,6 @@ colorsList.forEach((li) => {
     localStorage.setItem("colors", event.target.dataset.color);
   });
 });
-
 /* Subscribe Form Validation */
 let subscribeVaild = document.querySelector("#email");
 document.forms[0].onsubmit = function (event) {
