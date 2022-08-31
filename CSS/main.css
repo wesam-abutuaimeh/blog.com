@@ -1229,7 +1229,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgba(0, 0, 0, 0.932);
+  color: var(--paragraph-color);
   text-transform: uppercase;
 }
 
@@ -1244,12 +1244,18 @@ p {
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+
 }
 
-.skills .skill .progress {
+.skills .progress {
   height: 30px;
   background-color: #f9f9f9;
   position: relative;
+  transition: width 2s linear;
+  -o-transition: width 2s linear;
+  -webkit-transition: width 2s linear;
+  -moz-transition: width 2s linear;
+  -ms-transition: width 2s linear;
 }
 
 .skills .skill .progress span {
@@ -1258,6 +1264,11 @@ p {
   left: 0;
   top: 0;
   background-color: var(--main-color);
+  transition: .5s linear;
+  -webkit-transition: .5s linear;
+  -moz-transition: .5s linear;
+  -ms-transition: .5s linear;
+  -o-transition: .5s linear;
 }
 
 /* End Skills section Style */
