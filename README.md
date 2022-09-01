@@ -8,7 +8,7 @@
 [Blog-Template Link](https://wesam-abutuaimeh.github.io/personal-blog-me.com/Html/)
 
 <br/><br/>
-![Screenshot](../Full WebPage Image.png)
+![Screenshot](/Full WebPage Image.png)
 <br/><br/>
 
 
