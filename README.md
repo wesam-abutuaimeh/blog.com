@@ -8,7 +8,8 @@
 [Blog-Template Link](https://wesam-abutuaimeh.github.io/personal-blog-me.com/Html/)
 
 <br/><br/>
-![Screenshot](Media/author.jpg)
-<br/>
+![Screenshot](../Full WebPage Image.png)
+<br/><br/>
+
 
  <h6 align="center">With my Best Regards ❤</h6>
