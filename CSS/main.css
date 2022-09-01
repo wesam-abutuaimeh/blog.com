@@ -422,7 +422,7 @@ i.fas.fa-blog {
   position: fixed;
   left: -200px;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
   transition: var(--main-transition);
   -webkit-transition: var(--main-transition);
   -moz-transition: var(--main-transition);
