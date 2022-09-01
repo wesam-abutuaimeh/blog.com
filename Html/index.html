@@ -735,24 +735,25 @@
   <!-- Start LATEST EVENTS Section -->
   <section class="lastest-events" id="lastest-events">
     <div class="section-header">Latest Events</div>
+    <img src="../Media/dots.png" alt="dots" class="dots">
     <div class="container">
       <img src="../Media/events.png" alt="lastest events" />
       <div class="info">
         <div class="time">
           <div class="unit">
-            <span>200</span>
+            <span class="remaining">200</span>
             <span>days</span>
           </div>
           <div class="unit">
-            <span>20</span>
+            <span class="remaining">20</span>
             <span>Hours</span>
           </div>
           <div class="unit">
-            <span>30</span>
+            <span class="remaining">30</span>
             <span>Minutes</span>
           </div>
           <div class="unit">
-            <span>12</span>
+            <span class="remaining">12</span>
             <span>Seconds</span>
           </div>
         </div>
@@ -773,12 +774,14 @@
         </form>
       </div>
     </div>
+    <img src="../Media/dots.png" alt="dots" class="down-dots">
   </section>
   <!-- End LATEST EVENTS Section -->
 
   <!-- Start Pricing Plan Section -->
   <section class="pricing-plan" id="pricing-plan">
     <div class="section-header">Pricing Plans</div>
+    <img src="../Media/dots.png" alt="dots" class="dots">
     <div class="container">
       <div class="price-plan-box">
         <h3>Basic</h3>
@@ -824,6 +827,7 @@
         <a href="#">Choose Plan</a>
       </div>
     </div>
+    <img src="../Media/dots.png" alt="dots" class="down-dots">
   </section>
   <!-- End Pricing Plan Section -->
 
@@ -858,25 +862,25 @@
   <!-- Start Stats Section -->
   <section class="stats" id="stats">
     <div class="section-header">Our Awesome Stats</div>
-    <div class="container">
+    <div class="container stats">
       <div class="box">
         <i class="fas fa-user fa-3x"></i>
-        <span>500</span>
+        <span class="num" data-goal="123">0</span>
         <span>client</span>
       </div>
       <div class="box">
         <i class="fas fa-code fa-3x"></i>
-        <span>550</span>
+        <span class="num" data-goal="89">0</span>
         <span>project</span>
       </div>
       <div class="box">
         <i class="fas fa-globe-asia fa-3x"></i>
-        <span>30</span>
+        <span class="num" data-goal="45">0</span>
         <span>countries</span>
       </div>
       <div class="box">
         <i class="fas fa-dollar-sign fa-3x"></i>
-        <span>100000</span>
+        <span class="num" data-goal="1234">0</span>
         <span>money</span>
       </div>
     </div>
@@ -989,6 +993,24 @@
   </footer>
   <!-- End Footer Section -->
   <script src="../main.js"></script>
+
+  <script>
+    /* Scroll To Top Button */
+    let scroolBtn = document.querySelector(".to-top-butotn");
+    window.onscroll = function () {
+      if (window.scrollY >= 623) {
+        scroolBtn.style.display = "block";
+      } else scroolBtn.style.display = "none";
+    };
+    scroolBtn.onclick = function () {
+      window.scrollTo({
+        top: 0,
+        right: 4,
+        behavior: "smooth",
+      });
+    };
+  </script>
+
 </body>
 
 </html>

@@ -102,7 +102,6 @@ document.forms[1].onsubmit = function (event) {
   if (userMessageInput.value !== "" && userMessageInput.value.length < 250) {
     textArea = true;
   }
-
   if (
     name === false ||
     email === false ||
@@ -113,28 +112,35 @@ document.forms[1].onsubmit = function (event) {
   }
 };
 
-/* Scroll To Top Button */
-let scroolBtn = document.querySelector(".to-top-butotn");
+// increase numbers on scrolling
+const stateSection = document.getElementById("stats");
+const stats = document.querySelectorAll(".stats .num");
+let started = false;
+function increaseNums(element) {
+  const goal = element.dataset.goal;
+  const counter = setInterval(() => {
+    element.textContent++;
+    if (element.textContent === goal) {
+      clearInterval(counter);
+    }
+  }, 500 / goal);
+}
 window.onscroll = function () {
-  if (window.scrollY >= 623) {
-    scroolBtn.style.display = "block";
-  } else scroolBtn.style.display = "none";
-};
-scroolBtn.onclick = function () {
-  window.scrollTo({
-    top: 0,
-    right: 4,
-    behavior: "smooth",
-  });
+  if (window.scrollY >= stateSection.offsetTop) {
+    if (!started) {
+      stats.forEach((stats) => {
+        increaseNums(stats);
+      });
+    }
+    started = true;
+  }
 };
 
 // animation on skill section on scroll
 let section = document.querySelector(".skills");
 let spans = document.querySelectorAll(".progress span");
-
 window.onscroll = function () {
   if (window.scrollY >= section.offsetTop) {
-    console.log("Reached Section Three");
     spans.forEach((span) => {
       span.style.width = span.dataset.width;
     });
