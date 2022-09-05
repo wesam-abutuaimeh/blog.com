@@ -38,6 +38,7 @@ console.log(
 
 document.querySelector(".icon").onclick = (_) => {
   settingBox.classList.toggle("show");
+  icon.classList.toggle("fa-spin");
 };
 
 if (localStorage.getItem("colors")) {
