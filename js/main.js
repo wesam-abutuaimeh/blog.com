@@ -43,7 +43,7 @@ document.querySelector(".icon").onclick = (_) => {
 
 if (localStorage.getItem("colors")) {
   document.documentElement.style.setProperty(
-    "--main-color-",
+    "--main-color",
     localStorage.getItem("colors")
   );
   console.log(
@@ -57,7 +57,7 @@ let colorsList = document.querySelectorAll(".colors-options li");
 colorsList.forEach((li) => {
   li.addEventListener("click", (event) => {
     document.documentElement.style.setProperty(
-      "--main-color-",
+      "--main-color",
       event.target.dataset.color
     );
     localStorage.setItem("colors", event.target.dataset.color);

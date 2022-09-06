@@ -1912,7 +1912,7 @@ p {
 
 .stats .box {
   padding: var(--main-padding);
-
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
