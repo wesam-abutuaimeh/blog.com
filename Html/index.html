@@ -1,1010 +1,1118 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Develop and Design Awesome Websites and Web Application , We Serve All ..."
+    />
+    <meta name="author" content="Wesam Abu Taima " />
+    <meta name="copyRight" content="copyRight By developer Wesam Abu Taima" />
+    <meta name="revised" content="Wednesday, May 4th, 2022, 11:04 pm" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <!--Normalize-->
+    <link rel="stylesheet" href="../CSS/Normalize.css" />
+    <!--Css-->
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="//fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="../Media/tab-icon.jpg"
+      type="image/x-icon"
+    />
+    <title>Wesam | Blog ~ Awesome code</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Develop and Design Awesome Websites and Web Application , We Serve All ..." />
-  <meta name="author" content="Wesam Abu Taima " />
-  <meta name="copyRight" content="copyRight By developer Wesam Abu Taima" />
-  <meta name="revised" content="Wednesday, May 4th, 2022, 11:04 pm" />
-  <!--Font Awesome-->
-  <link rel="stylesheet" href="../CSS/all.min.css" />
-  <!--Normalize-->
-  <link rel="stylesheet" href="../CSS/Normalize.css" />
-  <!--Css-->
-  <link rel="stylesheet" href="../CSS/main.css" />
-  <!--Google fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="//fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <!--Favicon-->
-  <link rel="shortcut icon" href="../Media/tab-icon.jpg" type="image/x-icon" />
-  <title>Wesam | Blog ~ Awesome code</title>
-</head>
-
-<body>
-
-  <!-- Start Loading divs -->
-  <div class="loader">
-    <div class="waterfall">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  <!-- End Loading divs -->
-
-  <!-- Start Setting Box  -->
-  <div class="setting-box">
-    <div class="icon">
-      <i id="icon" class="fa fa-cog" aria-hidden="true"></i>
-    </div>
-    <div class="setting-box-container">
-      <h2>Settings</h2>
-      <div class="colors-options">
-        <h4>colors:</h4>
-        <ul>
-          <li class="active" data-color="#2196f3"></li>
-          <li data-color="#a41fad"></li>
-          <li data-color="#ad116c"></li>
-          <li data-color="#ad1838"></li>
-          <li data-color="#00a9ad"></li>
-        </ul>
+  <body>
+    <!-- Start Loading divs -->
+    <div class="loader">
+      <div class="waterfall">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
+    <!-- End Loading divs -->
 
-    <div class="setting-box-container">
-      <h2>Theme Color</h2>
-      <h4>Light / Dark </h4>
-      <div class="toggle-btn"></div>
+    <!-- Start Setting Box  -->
+    <div class="setting-box">
+      <div class="icon">
+        <i id="icon" class="fa fa-cog" aria-hidden="true"></i>
+      </div>
+      <div class="setting-box-container">
+        <h2>Settings</h2>
+        <div class="colors-options">
+          <h4>colors:</h4>
+          <ul>
+            <li class="active" data-color="#2196f3"></li>
+            <li data-color="#a41fad"></li>
+            <li data-color="#ad116c"></li>
+            <li data-color="#ad1838"></li>
+            <li data-color="#00a9ad"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="setting-box-container">
+        <h2>Theme Color</h2>
+        <h4>Light / Dark</h4>
+        <div class="toggle-btn"></div>
+      </div>
+      <h4
+        style="
+          position: absolute;
+          top: 75%;
+          right: 10px;
+          translate: 0 -50%;
+          writing-mode: vertical-lr;
+        "
+      >
+        Under Developement
+      </h4>
     </div>
-    <h4 style="position: absolute;
-    top: 75%;
-    right: 10px;
-    translate: 0 -50%;
-    writing-mode: vertical-lr;">Under Developement</h4>
-  </div>
-  <!-- End Setting Box  -->
+    <!-- End Setting Box  -->
 
-  <!-- To Top Button -->
-  <button id="to-top-butotn" class="to-top-butotn">
-    <i class="fas fa-angle-double-up"></i>
-  </button>
-  <!-- To Top Button -->
+    <!-- To Top Button -->
+    <button id="to-top-butotn" class="to-top-butotn">
+      <i class="fas fa-angle-double-up"></i>
+    </button>
+    <!-- To Top Button -->
 
-  <!--Start Header-->
-  <header>
-    <nav class="header" id="header">
-      <div class="container">
-        <a href="#" id="logo" class="logo"><i class="fas fa-blog"></i>WesamBlog</a>
-        <ul class="main-nav">
-          <li><a href="#article">Article</a></li>
-          <li><a href="#gallery-container">Gallery</a></li>
-          <li><a href="#features">Features</a></li>
-          <li>
-            <a href="#">Other Links</a>
-            <!-- Start Mega Menu -->
-            <div class="mega-menu">
-              <div class="image">
-                <img src="../Media/megamenu.png" alt="Nice photo" />
+    <!--Start Header-->
+    <header>
+      <nav class="header" id="header">
+        <div class="container">
+          <a href="#" id="logo" class="logo"
+            ><i class="fas fa-blog"></i>WesamBlog</a
+          >
+          <ul class="main-nav">
+            <li><a href="#article">Article</a></li>
+            <li><a href="#gallery-container">Gallery</a></li>
+            <li><a href="#features">Features</a></li>
+            <li>
+              <a href="#">Other Links</a>
+              <!-- Start Mega Menu -->
+              <div class="mega-menu">
+                <div class="image">
+                  <img src="../Media/megamenu.png" alt="Nice photo" />
+                </div>
+                <ul class="links">
+                  <li class="new">
+                    <a href="#testimonials"
+                      ><i class="far fa-comments fa-fw"></i>Testimonials</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#team-member"
+                      ><i class="far fa-user fa-fw"></i>TeamMember</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#services"
+                      ><i class="far fa-building fa-fw"></i>Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#skills"
+                      ><i class="far fa-check-circle fa-fw"></i>Our Skills</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#how-it-work"
+                      ><i class="far fa-clipboard fa-fw"></i>How It Works</a
+                    >
+                  </li>
+                </ul>
+                <ul class="links">
+                  <li>
+                    <a href="#lastest-events"
+                      ><i class="far fa-calendar-alt fa-fw"></i>Events</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#pricing-plan"
+                      ><i class="fas fa-server fa-fw"></i>Pricing Plans</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#top-video"
+                      ><i class="far fa-play-circle fa-fw"></i>Top Videos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#stats"
+                      ><i class="far fa-chart-bar fa-fw"></i>Stats</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact-form"
+                      ><i class="fas fa-percent fa-fw"></i>Request A Discount</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <ul class="links">
-                <li class="new">
-                  <a href="#testimonials"><i class="far fa-comments fa-fw"></i>Testimonials</a>
-                </li>
-                <li>
-                  <a href="#team-member"><i class="far fa-user fa-fw"></i>TeamMember</a>
-                </li>
-                <li>
-                  <a href="#services"><i class="far fa-building fa-fw"></i>Services</a>
-                </li>
-                <li>
-                  <a href="#skills"><i class="far fa-check-circle fa-fw"></i>Our Skills</a>
-                </li>
-                <li>
-                  <a href="#how-it-work"><i class="far fa-clipboard fa-fw"></i>How It Works</a>
-                </li>
-              </ul>
-              <ul class="links">
-                <li>
-                  <a href="#lastest-events"><i class="far fa-calendar-alt fa-fw"></i>Events</a>
-                </li>
-                <li>
-                  <a href="#pricing-plan"><i class="fas fa-server fa-fw"></i>Pricing Plans</a>
-                </li>
-                <li>
-                  <a href="#top-video"><i class="far fa-play-circle fa-fw"></i>Top Videos</a>
-                </li>
-                <li>
-                  <a href="#stats"><i class="far fa-chart-bar fa-fw"></i>Stats</a>
-                </li>
-                <li>
-                  <a href="#contact-form"><i class="fas fa-percent fa-fw"></i>Request A Discount</a>
-                </li>
-              </ul>
+              <!-- End Megamenu -->
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--End Header-->
+
+    <!--Start Landing Section-->
+    <section class="landing-section">
+      <div class="container">
+        <div class="text">
+          <h1>Welcome, To my BLOG World</h1>
+          <p>
+            Here I Am <span> Wesam Abu Taima </span>Share Everything About My
+            Life. Books I'm Reading, Games I'm Playing, Stories And Events And A
+            Lots Of Things, Follow Me ....
+          </p>
+        </div>
+        <div class="image">
+          <img src="../Media/landing-image.png" alt="Landing Image" />
+        </div>
+      </div>
+      <div class="arrow-toDown">
+        <a href="#article"><i class="fas fa-angle-double-down"></i></a>
+      </div>
+    </section>
+    <!--End Landing Section-->
+
+    <!-- Start article section -->
+    <section class="articles-container" id="article">
+      <div class="section-header">My Articles</div>
+      <div class="container">
+        <div class="article">
+          <div class="image">
+            <img
+              src="../Media/Article (1).jpg"
+              alt="image that give a quick look for article"
+            />
+          </div>
+          <div class="txt">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="read-more">
+            <a href="#">Read more<i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+        <div class="article">
+          <div class="image">
+            <img
+              src="../Media/Article (2).jpg"
+              alt="image that give a quick look for article"
+            />
+          </div>
+          <div class="txt">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="read-more">
+            <a href="#"
+              >Read more <i class="fas fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="article">
+          <div class="image">
+            <img
+              src="../Media/Article (3).jpg"
+              alt="image that give a quick look for article"
+            />
+          </div>
+          <div class="txt">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="read-more">
+            <a href="#"
+              >Read more <i class="fas fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="article">
+          <div class="image">
+            <img
+              src="../Media/Article (4).jpg"
+              alt="image that give a quick look for article"
+            />
+          </div>
+          <div class="txt">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="read-more">
+            <a href="#"
+              >Read more <i class="fas fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="article">
+          <div class="image">
+            <img
+              src="../Media/Article (5).jpg"
+              alt="image that give a quick look for article"
+            />
+          </div>
+          <div class="txt">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="read-more">
+            <a href="#"
+              >Read more <i class="fas fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="article">
+          <div class="image">
+            <img
+              src="../Media/Article (6).jpg"
+              alt="image that give a quick look for article"
+            />
+          </div>
+          <div class="txt">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="read-more">
+            <a href="#"
+              >Read more <i class="fas fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="article">
+          <div class="image">
+            <img
+              src="../Media/Article (7).jpg"
+              alt="image that give a quick look for article"
+            />
+          </div>
+          <div class="txt">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="read-more">
+            <a href="#"
+              >Read more <i class="fas fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="article">
+          <div class="image">
+            <img
+              src="../Media/Article (1).jpg"
+              alt="image that give a quick look for article"
+            />
+          </div>
+          <div class="txt">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="read-more">
+            <a href="#"
+              >Read more <i class="fas fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End article section -->
+
+    <div class="spikes"></div>
+    <!-- Start Gallery section -->
+    <section class="gallery-container" id="gallery-container">
+      <div class="section-header">My Gallery</div>
+      <div class="container">
+        <div class="box">
+          <div class="image">
+            <img src="../Media/Gallery.jpg" alt="photo" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="../Media/Gallery0.jpg" alt="photo" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="../Media/Gallery5.jpg" alt="photo" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="../Media/Gallery3.jpg" alt="photo" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="../Media/Gallery3.jpg" alt="photo" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="../Media/Gallery.jpg" alt="photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Gallery Section -->
+
+    <!-- Start Features Section -->
+    <section class="features" id="features">
+      <div class="section-header">My Features</div>
+      <div class="container">
+        <div class="features-box">
+          <div class="image">
+            <img src="../Media/features0.jpg" alt="features image" />
+          </div>
+          <div class="txt">
+            <h3>quality</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+              expedita, tempora at sunt ex suscipit sit ullam a esse. Natus,
+              ratione unde eum amet alias cumque laboriosam ut ab eveniet.
+            </p>
+          </div>
+          <button
+            title="For more detials about my features click of this link. PLZ !!"
+          >
+            More
+          </button>
+        </div>
+        <div class="features-box">
+          <div class="image">
+            <img src="../Media/features1.jpg" alt="features image" />
+          </div>
+          <div class="txt">
+            <h3>time</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.Voluptas
+              expedita, tempora at sunt ex suscipit sit ullam a esse. Natus,
+              ratione unde eum amet alias cumque laboriosam ut ab eveniet.
+            </p>
+          </div>
+          <button
+            title="For more detials about my features click of this link. PLZ !!"
+          >
+            More
+          </button>
+        </div>
+        <div class="features-box">
+          <div class="image">
+            <img src="../Media/features2.jpg" alt="features image" />
+          </div>
+          <div class="txt">
+            <h3>passion</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+              expedita, tempora at sunt ex suscipit sit ullam a esse.
+              Natus,ratione unde eum amet alias cumque laboriosam ut ab eveniet.
+            </p>
+          </div>
+          <button
+            title="For more detials about my features click of this link. PLZ !!"
+          >
+            More
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Features Section -->
+
+    <!-- Start testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="section-header">Testimonials</div>
+      <div class="container">
+        <div class="testimonials-box">
+          <img src="../Media/avatar-1.png" alt="avatar" />
+          <h3 data-text="My Awesome Tooltip">John Doe</h3>
+          <span class="job-title">Full Stack Web Developer</span>
+          <div class="evaluation">
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rem
+            quos ad omnis, mollitia expedita rerum ea voluptatem debitis
+            reiciendis.
+          </p>
+        </div>
+        <div class="testimonials-box">
+          <img src="../Media/avatar-04.png" alt="avatar" />
+          <h3 data-text="My Awesome Tooltip">John Doe</h3>
+          <span class="job-title">Data Analyst</span>
+          <div class="evaluation">
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+          </div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            beatae quam ad odio, nulla est et commodi eligendi dicta possimus?
+          </p>
+        </div>
+        <div class="testimonials-box">
+          <img src="../Media/avatar-4.png" alt="avatar" />
+          <h3 data-text="My Awesome Tooltip">John Doe</h3>
+          <span class="job-title">Project Manager</span>
+          <div class="evaluation">
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="not-full far fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            asperiores animi totam deleniti quas ipsam nesciunt debitis. Magnam,
+            repellendus laborum?
+          </p>
+        </div>
+        <div class="testimonials-box">
+          <img src="../Media/avatar-03.png" alt="avatar" />
+          <h3 data-text="My Awesome Tooltip">John Doe</h3>
+          <span class="job-title">Full Stack Web Developer</span>
+          <div class="evaluation">
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="not-full far fa-star"></i>
+            <i class="not-full far fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure
+            inventore animi perferendis esse officiis optio odit magnam soluta
+            nulla!
+          </p>
+        </div>
+        <div class="testimonials-box">
+          <img src="../Media/avatar-2.png" alt="avatar" />
+          <h3 data-text="My Awesome Tooltip">John Doe</h3>
+          <span class="job-title">Full Stack Web Developer</span>
+          <div class="evaluation">
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="not-full far fa-star"></i>
+            <i class="not-full far fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+            repellat ducimus beatae autem laboriosam temporibus animi deserunt
+            sequi labore maiores.
+          </p>
+        </div>
+        <div class="testimonials-box">
+          <img src="../Media/avatar-1.png" alt="avatar" />
+          <h3 data-text="My Awesome Tooltip">John Doe</h3>
+          <span class="job-title">Database Administrator</span>
+          <div class="evaluation">
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="full fas fa-star"></i>
+            <i class="not-full far fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+            corrupti quaerat iure recusandae hic quam repellendus dicta velit
+            minima voluptates.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End testimonials Section -->
+
+    <!-- Start Team Members Section -->
+    <section class="team-member" id="team-member">
+      <div class="section-header">Team Members</div>
+      <div class="container">
+        <div class="box">
+          <div class="data">
+            <img src="../Media/team-02.png" alt="Team Member" />
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <!-- End Megamenu -->
-          </li>
-        </ul>
+          </div>
+          <div class="information">
+            <h3>name</h3>
+            <p>simple short description</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="data">
+            <img src="../Media/team-02.png" alt="Team Member" />
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="information">
+            <h3>name</h3>
+            <p>simple short description</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="data">
+            <img src="../Media/team-02.png" alt="Team Member" />
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="information">
+            <h3>name</h3>
+            <p>simple short description</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="data">
+            <img src="../Media/team-02.png" alt="Team Member" />
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="information">
+            <h3>name</h3>
+            <p>simple short description</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="data">
+            <img src="../Media/team-02.png" alt="Team Member" />
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="information">
+            <h3>name</h3>
+            <p>simple short description</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="data">
+            <img src="../Media/team-02.png" alt="Team Member" />
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="information">
+            <h3>name</h3>
+            <p>simple short description</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="data">
+            <img src="../Media/team-02.png" alt="Team Member" />
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="information">
+            <h3>name</h3>
+            <p>simple short description</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="data">
+            <img src="../Media/team-02.png" alt="Team Member" />
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="information">
+            <h3>name</h3>
+            <p>simple short description</p>
+          </div>
+        </div>
       </div>
-    </nav>
-  </header>
-  <!--End Header-->
+    </section>
+    <!-- End Team Members Section -->
 
-  <!--Start Landing Section-->
-  <section class="landing-section">
-    <div class="container">
-      <div class="text">
-        <h1>Welcome, To my BLOG World</h1>
-        <p>
-          Here I Am <span> Wesam Abu Taima </span>Share Everything About My
-          Life. Books I'm Reading, Games I'm Playing, Stories And Events And A
-          Lots Of Things, Follow Me ....
-        </p>
+    <!-- Start Services Section-->
+    <div class="spikes"></div>
+    <section class="services" id="services">
+      <div class="section-header">Services</div>
+      <div class="container">
+        <div class="box">
+          <i class="fas fa-user-shield fa-4x"></i>
+          <h3>security</h3>
+          <div class="info">
+            <a href="#" title="For more detials click of this link. PLZ !!"
+              >Details</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-tools fa-4x"></i>
+          <h3>Fixing Issuess</h3>
+          <div class="info">
+            <a href="#" title="For more detials click of this link. PLZ !!"
+              >Details</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-broadcast-tower fa-4x"></i>
+          <h3>location</h3>
+          <div class="info">
+            <a href="#" title="For more detials click of this link. PLZ !!"
+              >Details</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-code fa-4x"></i>
+          <h3>Coding</h3>
+          <div class="info">
+            <a href="#" title="For more detials click of this link. PLZ !!"
+              >Details</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-bullhorn fa-4x"></i>
+          <h3>Markting</h3>
+          <div class="info">
+            <a href="#" title="For more detials click of this link. PLZ !!"
+              >Details</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-wifi fa-4x"></i>
+          <h3>communication</h3>
+          <div class="info">
+            <a href="#" title="For more detials click of this link. PLZ !!"
+              >Details</a
+            >
+          </div>
+        </div>
       </div>
-      <div class="image">
-        <img src="../Media/landing-image.png" alt="Landing Image" />
-      </div>
-    </div>
-    <div class="arrow-toDown">
-      <a href="#article"><i class="fas fa-angle-double-down"></i></a>
-    </div>
-  </section>
-  <!--End Landing Section-->
+    </section>
+    <!-- End Services Section -->
 
-  <!-- Start article section -->
-  <section class="articles-container" id="article">
-    <div class="section-header">My Articles</div>
-    <div class="container">
-      <div class="article">
-        <div class="image">
-          <img src="../Media/Article (1).jpg" alt="image that give a quick look for article" />
-        </div>
-        <div class="txt">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="read-more">
-          <a href="#">Read more<i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-      </div>
-      <div class="article">
-        <div class="image">
-          <img src="../Media/Article (2).jpg" alt="image that give a quick look for article" />
-        </div>
-        <div class="txt">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="read-more">
-          <a href="#">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-      </div>
-      <div class="article">
-        <div class="image">
-          <img src="../Media/Article (3).jpg" alt="image that give a quick look for article" />
-        </div>
-        <div class="txt">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="read-more">
-          <a href="#">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+    <!-- Start Skills Section -->
+    <section class="skills" id="skills">
+      <div class="section-header">Our Skills</div>
+      <div class="container">
+        <img src="../Media/skills.jpg" alt="photo explian skills part" />
+        <div class="skills">
+          <div class="skill">
+            <h3>Html<span>95%</span></h3>
+            <div class="progress">
+              <span style="width: 0" data-width="95%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>Css<span>80%</span></h3>
+            <div class="progress">
+              <span style="width: 0" data-width="80%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>JavaScript<span>90%</span></h3>
+            <div class="progress">
+              <span style="width: 0" data-width="90%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>command line<span>80%</span></h3>
+            <div class="progress">
+              <span style="width: 0" data-width="80%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>sql<span>95%</span></h3>
+            <div class="progress">
+              <span style="width: 0" data-width="95%"></span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="article">
-        <div class="image">
-          <img src="../Media/Article (4).jpg" alt="image that give a quick look for article" />
-        </div>
-        <div class="txt">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="read-more">
-          <a href="#">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-      </div>
-      <div class="article">
-        <div class="image">
-          <img src="../Media/Article (5).jpg" alt="image that give a quick look for article" />
-        </div>
-        <div class="txt">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="read-more">
-          <a href="#">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-      </div>
-      <div class="article">
-        <div class="image">
-          <img src="../Media/Article (6).jpg" alt="image that give a quick look for article" />
-        </div>
-        <div class="txt">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="read-more">
-          <a href="#">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-      </div>
-      <div class="article">
-        <div class="image">
-          <img src="../Media/Article (7).jpg" alt="image that give a quick look for article" />
-        </div>
-        <div class="txt">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="read-more">
-          <a href="#">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-      </div>
-      <div class="article">
-        <div class="image">
-          <img src="../Media/Article (1).jpg" alt="image that give a quick look for article" />
-        </div>
-        <div class="txt">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="read-more">
-          <a href="#">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- End article section -->
+    </section>
+    <!-- End Skills Section -->
 
-  <div class="spikes"></div>
-  <!-- Start Gallery section -->
-  <section class="gallery-container" id="gallery-container">
-    <div class="section-header">My Gallery</div>
-    <div class="container">
-      <div class="box">
-        <div class="image">
-          <img src="../Media/Gallery.jpg" alt="photo" />
+    <!-- Start How It Work Section -->
+    <section class="how-it-work" id="how-it-work">
+      <div class="section-header">How It Work!</div>
+      <div class="container">
+        <img
+          class="part-logo"
+          src="../Media/how-it-work.svg"
+          alt="Work Steps"
+        />
+        <div class="box">
+          <div class="txt-box-container">
+            <img src="../Media/icon-business.png" alt="text box logo" />
+            <div class="txt">
+              <h3>business Analysis</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                nesciunt obcaecati quisquam quis laborum recusandae debitis vel
+              </p>
+            </div>
+          </div>
+          <div class="txt-box-container">
+            <img src="../Media/icon-business01.png" alt="text box logo" />
+            <div class="txt">
+              <h3>architecture</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                nesciunt obcaecati quisquam quis laborum recusandae debitis vel
+              </p>
+            </div>
+          </div>
+          <div class="txt-box-container">
+            <img src="../Media/icon-business02.png" alt="text box logo" />
+            <div class="txt">
+              <h3>developement</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                nesciunt obcaecati quisquam quis laborum recusandae debitis vel
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="box">
-        <div class="image">
-          <img src="../Media/Gallery0.jpg" alt="photo" />
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="../Media/Gallery5.jpg" alt="photo" />
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="../Media/Gallery3.jpg" alt="photo" />
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="../Media/Gallery3.jpg" alt="photo" />
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="../Media/Gallery.jpg" alt="photo" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Gallery Section -->
+    </section>
+    <!-- End How It Work Section -->
 
-  <!-- Start Features Section -->
-  <section class="features" id="features">
-    <div class="section-header">My Features</div>
-    <div class="container">
-      <div class="features-box">
-        <div class="image">
-          <img src="../Media/features0.jpg" alt="features image" />
-        </div>
-        <div class="txt">
-          <h3>quality</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
-            expedita, tempora at sunt ex suscipit sit ullam a esse. Natus,
-            ratione unde eum amet alias cumque laboriosam ut ab eveniet.
-          </p>
-        </div>
-        <button title="For more detials about my features click of this link. PLZ !!">
-          More
-        </button>
-      </div>
-      <div class="features-box">
-        <div class="image">
-          <img src="../Media/features1.jpg" alt="features image" />
-        </div>
-        <div class="txt">
-          <h3>time</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Voluptas
-            expedita, tempora at sunt ex suscipit sit ullam a esse. Natus,
-            ratione unde eum amet alias cumque laboriosam ut ab eveniet.
-          </p>
-        </div>
-        <button title="For more detials about my features click of this link. PLZ !!">
-          More
-        </button>
-      </div>
-      <div class="features-box">
-        <div class="image">
-          <img src="../Media/features2.jpg" alt="features image" />
-        </div>
-        <div class="txt">
-          <h3>passion</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
-            expedita, tempora at sunt ex suscipit sit ullam a esse.
-            Natus,ratione unde eum amet alias cumque laboriosam ut ab eveniet.
-          </p>
-        </div>
-        <button title="For more detials about my features click of this link. PLZ !!">
-          More
-        </button>
-      </div>
-    </div>
-  </section>
-  <!-- End Features Section -->
-
-  <!-- Start testimonials Section -->
-  <section class="testimonials" id="testimonials">
-    <div class="section-header">Testimonials</div>
-    <div class="container">
-      <div class="testimonials-box">
-        <img src="../Media/avatar-1.png" alt="avatar" />
-        <h3 data-text="My Awesome Tooltip">John Doe</h3>
-        <span class="job-title">Full Stack Web Developer</span>
-        <div class="evaluation">
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rem
-          quos ad omnis, mollitia expedita rerum ea voluptatem debitis
-          reiciendis.
-        </p>
-      </div>
-      <div class="testimonials-box">
-        <img src="../Media/avatar-04.png" alt="avatar" />
-        <h3 data-text="My Awesome Tooltip">John Doe</h3>
-        <span class="job-title">Data Analyst</span>
-        <div class="evaluation">
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-        </div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          beatae quam ad odio, nulla est et commodi eligendi dicta possimus?
-        </p>
-      </div>
-      <div class="testimonials-box">
-        <img src="../Media/avatar-4.png" alt="avatar" />
-        <h3 data-text="My Awesome Tooltip">John Doe</h3>
-        <span class="job-title">Project Manager</span>
-        <div class="evaluation">
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="not-full far fa-star"></i>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-          asperiores animi totam deleniti quas ipsam nesciunt debitis. Magnam,
-          repellendus laborum?
-        </p>
-      </div>
-      <div class="testimonials-box">
-        <img src="../Media/avatar-03.png" alt="avatar" />
-        <h3 data-text="My Awesome Tooltip">John Doe</h3>
-        <span class="job-title">Full Stack Web Developer</span>
-        <div class="evaluation">
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="not-full far fa-star"></i>
-          <i class="not-full far fa-star"></i>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure
-          inventore animi perferendis esse officiis optio odit magnam soluta
-          nulla!
-        </p>
-      </div>
-      <div class="testimonials-box">
-        <img src="../Media/avatar-2.png" alt="avatar" />
-        <h3 data-text="My Awesome Tooltip">John Doe</h3>
-        <span class="job-title">Full Stack Web Developer</span>
-        <div class="evaluation">
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="not-full far fa-star"></i>
-          <i class="not-full far fa-star"></i>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-          repellat ducimus beatae autem laboriosam temporibus animi deserunt
-          sequi labore maiores.
-        </p>
-      </div>
-      <div class="testimonials-box">
-        <img src="../Media/avatar-1.png" alt="avatar" />
-        <h3 data-text="My Awesome Tooltip">John Doe</h3>
-        <span class="job-title">Database Administrator</span>
-        <div class="evaluation">
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="full fas fa-star"></i>
-          <i class="not-full far fa-star"></i>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-          corrupti quaerat iure recusandae hic quam repellendus dicta velit
-          minima voluptates.
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- End testimonials Section -->
-
-  <!-- Start Team Members Section -->
-  <section class="team-member" id="team-member">
-    <div class="section-header">Team Members</div>
-    <div class="container">
-      <div class="box">
-        <div class="data">
-          <img src="../Media/team-02.png" alt="Team Member" />
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="information">
-          <h3>name</h3>
-          <p>simple short description</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="data">
-          <img src="../Media/team-02.png" alt="Team Member" />
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="information">
-          <h3>name</h3>
-          <p>simple short description</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="data">
-          <img src="../Media/team-02.png" alt="Team Member" />
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="information">
-          <h3>name</h3>
-          <p>simple short description</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="data">
-          <img src="../Media/team-02.png" alt="Team Member" />
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="information">
-          <h3>name</h3>
-          <p>simple short description</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="data">
-          <img src="../Media/team-02.png" alt="Team Member" />
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="information">
-          <h3>name</h3>
-          <p>simple short description</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="data">
-          <img src="../Media/team-02.png" alt="Team Member" />
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="information">
-          <h3>name</h3>
-          <p>simple short description</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="data">
-          <img src="../Media/team-02.png" alt="Team Member" />
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="information">
-          <h3>name</h3>
-          <p>simple short description</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="data">
-          <img src="../Media/team-02.png" alt="Team Member" />
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="information">
-          <h3>name</h3>
-          <p>simple short description</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Team Members Section -->
-
-  <!-- Start Services Section-->
-  <div class="spikes"></div>
-  <section class="services" id="services">
-    <div class="section-header">Services</div>
-    <div class="container">
-      <div class="box">
-        <i class="fas fa-user-shield fa-4x"></i>
-        <h3>security</h3>
+    <!-- Start LATEST EVENTS Section -->
+    <section class="lastest-events" id="lastest-events">
+      <div class="section-header">Latest Events</div>
+      <img src="../Media/dots.png" alt="dots" class="dots" />
+      <div class="container">
+        <img src="../Media/events.png" alt="lastest events" />
         <div class="info">
-          <a href="#" title="For more detials click of this link. PLZ !!">Details</a>
-        </div>
-      </div>
-      <div class="box">
-        <i class="fas fa-tools fa-4x"></i>
-        <h3>Fixing Issuess</h3>
-        <div class="info">
-          <a href="#" title="For more detials click of this link. PLZ !!">Details</a>
-        </div>
-      </div>
-      <div class="box">
-        <i class="fas fa-broadcast-tower fa-4x"></i>
-        <h3>location</h3>
-        <div class="info">
-          <a href="#" title="For more detials click of this link. PLZ !!">Details</a>
-        </div>
-      </div>
-      <div class="box">
-        <i class="fas fa-code fa-4x"></i>
-        <h3>Coding</h3>
-        <div class="info">
-          <a href="#" title="For more detials click of this link. PLZ !!">Details</a>
-        </div>
-      </div>
-      <div class="box">
-        <i class="fas fa-bullhorn fa-4x"></i>
-        <h3>Markting</h3>
-        <div class="info">
-          <a href="#" title="For more detials click of this link. PLZ !!">Details</a>
-        </div>
-      </div>
-      <div class="box">
-        <i class="fas fa-wifi fa-4x"></i>
-        <h3>communication</h3>
-        <div class="info">
-          <a href="#" title="For more detials click of this link. PLZ !!">Details</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Services Section -->
-
-  <!-- Start Skills Section -->
-  <section class="skills" id="skills">
-    <div class="section-header">Our Skills</div>
-    <div class="container">
-      <img src="../Media/skills.jpg" alt="photo explian skills part" />
-      <div class="skills">
-        <div class="skill">
-          <h3>Html<span>95%</span></h3>
-          <div class="progress">
-            <span style="width: 0" data-width="95%"></span>
+          <div class="time">
+            <div class="unit">
+              <span class="remaining">200</span>
+              <span>days</span>
+            </div>
+            <div class="unit">
+              <span class="remaining">20</span>
+              <span>Hours</span>
+            </div>
+            <div class="unit">
+              <span class="remaining">30</span>
+              <span>Minutes</span>
+            </div>
+            <div class="unit">
+              <span class="remaining">12</span>
+              <span>Seconds</span>
+            </div>
           </div>
-        </div>
-        <div class="skill">
-          <h3>Css<span>80%</span></h3>
-          <div class="progress">
-            <span style="width: 0" data-width="80%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h3>JavaScript<span>90%</span></h3>
-          <div class="progress">
-            <span style="width: 0" data-width="90%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h3>command line<span>80%</span></h3>
-          <div class="progress">
-            <span style="width: 0" data-width="80%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h3>sql<span>95%</span></h3>
-          <div class="progress">
-            <span style="width: 0" data-width="95%"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Skills Section -->
-
-  <!-- Start How It Work Section -->
-  <section class="how-it-work" id="how-it-work">
-    <div class="section-header">How It Work!</div>
-    <div class="container">
-      <img class="part-logo" src="../Media/how-it-work.svg" alt="Work Steps" />
-      <div class="box">
-        <div class="txt-box-container">
-          <img src="../Media/icon-business.png" alt="text box logo" />
           <div class="txt">
-            <h3>business Analysis</h3>
+            <h3>Tech Masters Event <span>2022</span></h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-              nesciunt obcaecati quisquam quis laborum recusandae debitis vel
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium facere doloribus eveniet quaerat. Quaerat quisquam
+              maiores neque? Esse quasi nobis excepturi quae eaque, laboriosam
+              quas fugiat, accusamus expedita asperiores fugit.
             </p>
           </div>
         </div>
-        <div class="txt-box-container">
-          <img src="../Media/icon-business01.png" alt="text box logo" />
-          <div class="txt">
-            <h3>architecture</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-              nesciunt obcaecati quisquam quis laborum recusandae debitis vel
-            </p>
-          </div>
+        <div class="subscribe-form">
+          <form action="" method="">
+            <input type="email" placeholder="Enter Your Email Here" />
+            <input type="submit" value="Subscribe" />
+          </form>
         </div>
-        <div class="txt-box-container">
-          <img src="../Media/icon-business02.png" alt="text box logo" />
-          <div class="txt">
-            <h3>developement</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-              nesciunt obcaecati quisquam quis laborum recusandae debitis vel
-            </p>
+      </div>
+      <img src="../Media/dots.png" alt="dots" class="down-dots" />
+    </section>
+    <!-- End LATEST EVENTS Section -->
+
+    <!-- Start Pricing Plan Section -->
+    <section class="pricing-plan" id="pricing-plan">
+      <div class="section-header">Pricing Plans</div>
+      <img src="../Media/dots.png" alt="dots" class="dots" />
+      <div class="container">
+        <div class="price-plan-box">
+          <h3>Basic</h3>
+          <img src="../Media/pricing-basic.png" alt="Hosting" />
+          <p>$15</p>
+          <span>per month</span>
+          <ul>
+            <li><i class="fas fa-shopping-cart"></i> 10GB HDD Space</li>
+            <li><i class="fas fa-shopping-cart"></i> 5 Email Addresses</li>
+            <li><i class="fas fa-shopping-cart"></i> 2 Subdomains</li>
+            <li><i class="fas fa-shopping-cart"></i> 4 Databases</li>
+            <li><i class="fas fa-shopping-cart"></i> Basic Support</li>
+          </ul>
+          <a href="#">Choose Plan</a>
+        </div>
+        <div class="price-plan-box most-popular" style="top: -20px">
+          <h3>advanced</h3>
+          <span class="popular">most popular</span>
+          <img src="../Media/pricing-advanced.png" alt="Hosting" />
+          <p>$25</p>
+          <span>per month</span>
+          <ul>
+            <li><i class="fas fa-shopping-cart"></i> 20GB HDD Space</li>
+            <li><i class="fas fa-shopping-cart"></i> 10 Email Addresses</li>
+            <li><i class="fas fa-shopping-cart"></i> 5 Subdomains</li>
+            <li><i class="fas fa-shopping-cart"></i> 8 Databases</li>
+            <li><i class="fas fa-shopping-cart"></i> Advanced Support</li>
+          </ul>
+          <a href="#">Choose Plan</a>
+        </div>
+        <div class="price-plan-box">
+          <h3>Professional</h3>
+          <img src="../Media/pricing-professional.png" alt="Hosting" />
+          <p>$45</p>
+          <span>per month</span>
+          <ul>
+            <li><i class="fas fa-shopping-cart"></i> 50GB HDD Space</li>
+            <li><i class="fas fa-shopping-cart"></i> 20 Email Addresses</li>
+            <li><i class="fas fa-shopping-cart"></i> 10 Subdomains</li>
+            <li><i class="fas fa-shopping-cart"></i> 20 Databases</li>
+            <li><i class="fas fa-shopping-cart"></i> Professional Support</li>
+          </ul>
+          <a href="#">Choose Plan</a>
+        </div>
+      </div>
+      <img src="../Media/dots.png" alt="dots" class="down-dots" />
+    </section>
+    <!-- End Pricing Plan Section -->
+
+    <!-- Start Top Video Section -->
+    <section class="top-video" id="top-video">
+      <div class="section-header">Top Video</div>
+      <div class="container">
+        <div class="holder">
+          <div class="list">
+            <div class="name">Top Videos <i class="fas fa-random"></i></div>
+            <ul>
+              <li>How To Create Sub Domain<span>05:18</span></li>
+              <li>Playing With The DNS <span>03:18</span></li>
+              <li>Everything About The Virtual Hosts <span>05:25</span></li>
+              <li>How To Monitor Your Website <span>04:16</span></li>
+              <li>Uncharted Beating The Last Boss <span>07:48</span></li>
+              <li>Ys Oath In Felghana Overview <span>03:12</span></li>
+              <li>Ys Series All Games Ending <span>08:10</span></li>
+            </ul>
+          </div>
+          <div class="video-prev">
+            <div class="video-show">
+              <img src="../Media/video-show.jpg" alt="Video Preview" />
+            </div>
+            <div class="info">Everything About The Virtual Hosts</div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- End Top Video Section -->
 
-  </section>
-  <!-- End How It Work Section -->
+    <!-- Start Stats Section -->
+    <section class="stats" id="stats">
+      <div class="section-header">Our Awesome Stats</div>
+      <div class="container stats">
+        <div class="box">
+          <i class="fas fa-user fa-3x"></i>
+          <span class="num" data-goal="123">0</span>
+          <span>client</span>
+        </div>
+        <div class="box">
+          <i class="fas fa-code fa-3x"></i>
+          <span class="num" data-goal="89">0</span>
+          <span>project</span>
+        </div>
+        <div class="box">
+          <i class="fas fa-globe-asia fa-3x"></i>
+          <span class="num" data-goal="45">0</span>
+          <span>countries</span>
+        </div>
+        <div class="box">
+          <i class="fas fa-dollar-sign fa-3x"></i>
+          <span class="num" data-goal="1234">0</span>
+          <span>money</span>
+        </div>
+      </div>
+    </section>
+    <!-- End Stats Section -->
 
-  <!-- Start LATEST EVENTS Section -->
-  <section class="lastest-events" id="lastest-events">
-    <div class="section-header">Latest Events</div>
-    <img src="../Media/dots.png" alt="dots" class="dots">
-    <div class="container">
-      <img src="../Media/events.png" alt="lastest events" />
+    <!--Start Contact Form-->
+    <section class="contact-form" id="contact-form">
       <div class="info">
-        <div class="time">
-          <div class="unit">
-            <span class="remaining">200</span>
-            <span>days</span>
-          </div>
-          <div class="unit">
-            <span class="remaining">20</span>
-            <span>Hours</span>
-          </div>
-          <div class="unit">
-            <span class="remaining">30</span>
-            <span>Minutes</span>
-          </div>
-          <div class="unit">
-            <span class="remaining">12</span>
-            <span>Seconds</span>
-          </div>
-        </div>
-        <div class="txt">
-          <h3>Tech Masters Event <span>2022</span></h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Laudantium facere doloribus eveniet quaerat. Quaerat quisquam
-            maiores neque? Esse quasi nobis excepturi quae eaque, laboriosam
-            quas fugiat, accusamus expedita asperiores fugit.
-          </p>
-        </div>
+        <h4>We Have A Discount</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          tempore ipsam deleniti, voluptas veritatis dolor in delectus facere
+          sint quasi harum porro distinctio velit debitis odio amet! Enim
+          dolores incidunt perferendis exercitationem autem eos vero quas
+          repudiandae recusandae, eligendi, dolore laudantium consectetur
+          voluptatem quasi, soluta minus voluptates.
+        </p>
+        <img src="../Media/form.png" alt="Discount" />
       </div>
-      <div class="subscribe-form">
+      <div class="form">
+        <h4>request a discount</h4>
         <form action="" method="">
-          <input type="email" placeholder="Enter Your Email Here" />
-          <input type="submit" value="Subscribe" />
+          <input type="text" placeholder="Your Name *" name="name" id="name" />
+          <input
+            type="email"
+            placeholder="Your Email *"
+            name="email"
+            id="email"
+          />
+          <input
+            type="text"
+            placeholder="Your Phone *"
+            name="phone"
+            id="phone"
+          />
+          <textarea
+            class="user-message"
+            name="user-message"
+            id="user-message"
+            placeholder="Tell Us About You Needs *"
+          ></textarea>
+          <input type="submit" value="send" />
         </form>
       </div>
-    </div>
-    <img src="../Media/dots.png" alt="dots" class="down-dots">
-  </section>
-  <!-- End LATEST EVENTS Section -->
+    </section>
+    <!--End Contact Form-->
 
-  <!-- Start Pricing Plan Section -->
-  <section class="pricing-plan" id="pricing-plan">
-    <div class="section-header">Pricing Plans</div>
-    <img src="../Media/dots.png" alt="dots" class="dots">
-    <div class="container">
-      <div class="price-plan-box">
-        <h3>Basic</h3>
-        <img src="../Media/pricing-basic.png" alt="Hosting" />
-        <p>$15</p>
-        <span>per month</span>
-        <ul>
-          <li><i class="fas fa-shopping-cart"></i> 10GB HDD Space</li>
-          <li><i class="fas fa-shopping-cart"></i> 5 Email Addresses</li>
-          <li><i class="fas fa-shopping-cart"></i> 2 Subdomains</li>
-          <li><i class="fas fa-shopping-cart"></i> 4 Databases</li>
-          <li><i class="fas fa-shopping-cart"></i> Basic Support</li>
-        </ul>
-        <a href="#">Choose Plan</a>
-      </div>
-      <div class="price-plan-box most-popular" style="top: -20px">
-        <h3>advanced</h3>
-        <span class="popular">most popular</span>
-        <img src="../Media/pricing-advanced.png" alt="Hosting" />
-        <p>$25</p>
-        <span>per month</span>
-        <ul>
-          <li><i class="fas fa-shopping-cart"></i> 20GB HDD Space</li>
-          <li><i class="fas fa-shopping-cart"></i> 10 Email Addresses</li>
-          <li><i class="fas fa-shopping-cart"></i> 5 Subdomains</li>
-          <li><i class="fas fa-shopping-cart"></i> 8 Databases</li>
-          <li><i class="fas fa-shopping-cart"></i> Advanced Support</li>
-        </ul>
-        <a href="#">Choose Plan</a>
-      </div>
-      <div class="price-plan-box">
-        <h3>Professional</h3>
-        <img src="../Media/pricing-professional.png" alt="Hosting" />
-        <p>$45</p>
-        <span>per month</span>
-        <ul>
-          <li><i class="fas fa-shopping-cart"></i> 50GB HDD Space</li>
-          <li><i class="fas fa-shopping-cart"></i> 20 Email Addresses</li>
-          <li><i class="fas fa-shopping-cart"></i> 10 Subdomains</li>
-          <li><i class="fas fa-shopping-cart"></i> 20 Databases</li>
-          <li><i class="fas fa-shopping-cart"></i> Professional Support</li>
-        </ul>
-        <a href="#">Choose Plan</a>
-      </div>
-    </div>
-    <img src="../Media/dots.png" alt="dots" class="down-dots">
-  </section>
-  <!-- End Pricing Plan Section -->
-
-  <!-- Start Top Video Section -->
-  <section class="top-video" id="top-video">
-    <div class="section-header">Top Video</div>
-    <div class="container">
-      <div class="holder">
-        <div class="list">
-          <div class="name">Top Videos <i class="fas fa-random"></i></div>
-          <ul>
-            <li>How To Create Sub Domain<span>05:18</span></li>
-            <li>Playing With The DNS <span>03:18</span></li>
-            <li>Everything About The Virtual Hosts <span>05:25</span></li>
-            <li>How To Monitor Your Website <span>04:16</span></li>
-            <li>Uncharted Beating The Last Boss <span>07:48</span></li>
-            <li>Ys Oath In Felghana Overview <span>03:12</span></li>
-            <li>Ys Series All Games Ending <span>08:10</span></li>
-          </ul>
-        </div>
-        <div class="video-prev">
-          <div class="video-show">
-            <img src="../Media/video-show.jpg" alt="Video Preview" />
+    <!-- Start Footer Section  -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="box what-i-am">
+            <h3>WesamBlog</h3>
+            <ul class="social">
+              <li>
+                <a
+                  href="https://www.facebook.com/Wesam.Hatem.111"
+                  title="Social Media"
+                  target="_blank"
+                  class="facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/WesamHAbuTiema"
+                  title="Social Media"
+                  target="_blank"
+                  class="twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/wesamhatem2021/"
+                  title="Social Media"
+                  target="_blank"
+                  class="instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos,
+              dolorum!
+            </p>
           </div>
-          <div class="info">Everything About The Virtual Hosts</div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Top Video Section -->
-
-  <!-- Start Stats Section -->
-  <section class="stats" id="stats">
-    <div class="section-header">Our Awesome Stats</div>
-    <div class="container stats">
-      <div class="box">
-        <i class="fas fa-user fa-3x"></i>
-        <span class="num" data-goal="123">0</span>
-        <span>client</span>
-      </div>
-      <div class="box">
-        <i class="fas fa-code fa-3x"></i>
-        <span class="num" data-goal="89">0</span>
-        <span>project</span>
-      </div>
-      <div class="box">
-        <i class="fas fa-globe-asia fa-3x"></i>
-        <span class="num" data-goal="45">0</span>
-        <span>countries</span>
-      </div>
-      <div class="box">
-        <i class="fas fa-dollar-sign fa-3x"></i>
-        <span class="num" data-goal="1234">0</span>
-        <span>money</span>
-      </div>
-    </div>
-  </section>
-  <!-- End Stats Section -->
-
-  <!--Start Contact Form-->
-  <section class="contact-form" id="contact-form">
-    <div class="info">
-      <h4>We Have A Discount</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-        tempore ipsam deleniti, voluptas veritatis dolor in delectus facere
-        sint quasi harum porro distinctio velit debitis odio amet! Enim
-        dolores incidunt perferendis exercitationem autem eos vero quas
-        repudiandae recusandae, eligendi, dolore laudantium consectetur
-        voluptatem quasi, soluta minus voluptates.
-      </p>
-      <img src="../Media/form.png" alt="Discount" />
-    </div>
-    <div class="form">
-      <h4>request a discount</h4>
-      <form action="" method="">
-        <input type="text" placeholder="Your Name *" name="name" id="name" />
-        <input type="email" placeholder="Your Email *" name="email" id="email" />
-        <input type="text" placeholder="Your Phone *" name="phone" id="phone" />
-        <textarea class="user-message" name="user-message" id="user-message"
-          placeholder="Tell Us About You Needs *"></textarea>
-        <input type="submit" value="send" />
-      </form>
-    </div>
-  </section>
-  <!--End Contact Form-->
-
-  <!-- Start Footer Section  -->
-  <footer>
-    <div class="footer">
-      <div class="container">
-        <div class="box what-i-am">
-          <h3>WesamBlog</h3>
-          <ul class="social">
-            <li>
-              <a href="https://www.facebook.com/Wesam.Hatem.111" title="Social Media" target="_blank" class="facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/WesamHAbuTiema" title="Social Media" target="_blank" class="twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/wesamhatem2021/" title="Social Media" target="_blank"
-                class="instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-          <p class="text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos,
-            dolorum!
-          </p>
-        </div>
-        <div class="box">
-          <ul class="links">
-            <li>
-              <a href="https://github.com/wesam-abutuaimeh" target="_black">Important Link 1</a>
-            </li>
-            <li>
-              <a href="https://wesam-abutuaimeh.github.io/todolist-app/html">Important Link 2</a>
-            </li>
-            <li><a href="https://mawdee3.com/">Important Link 3</a></li>
-            <li><a href="#">Important Link 4</a></li>
-            <li><a href="#">Important Link 5</a></li>
-          </ul>
-        </div>
-        <div class="box">
-          <div class="line">
-            <i class="fas fa-map-marker-alt fa-fw"></i>
-            <div class="info">
-              Egypt, Giza, Inside The Sphinx, Room Number 220
+          <div class="box">
+            <ul class="links">
+              <li>
+                <a href="https://github.com/wesam-abutuaimeh" target="_black"
+                  >Important Link 1</a
+                >
+              </li>
+              <li>
+                <a href="https://wesam-abutuaimeh.github.io/todolist-app/html"
+                  >Important Link 2</a
+                >
+              </li>
+              <li><a href="https://mawdee3.com/">Important Link 3</a></li>
+              <li><a href="#">Important Link 4</a></li>
+              <li><a href="#">Important Link 5</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <div class="line">
+              <i class="fas fa-map-marker-alt fa-fw"></i>
+              <div class="info">
+                Egypt, Giza, Inside The Sphinx, Room Number 220
+              </div>
+            </div>
+            <div class="line">
+              <i class="far fa-clock fa-fw"></i>
+              <div class="info">Business Hours: From 10:00 To 18:00</div>
+            </div>
+            <div class="line">
+              <i class="fas fa-phone-volume fa-fw"></i>
+              <div class="info">
+                <span>+970_598_4251</span>
+                <span>+970_598_4251</span>
+              </div>
             </div>
           </div>
-          <div class="line">
-            <i class="far fa-clock fa-fw"></i>
-            <div class="info">Business Hours: From 10:00 To 18:00</div>
-          </div>
-          <div class="line">
-            <i class="fas fa-phone-volume fa-fw"></i>
-            <div class="info">
-              <span>+970_598_4251</span>
-              <span>+970_598_4251</span>
-            </div>
+          <div class="box footer-gallery">
+            <img src="../Media/Gallery1.jpg" alt="photo" />
+            <img src="../Media/Gallery3.jpg" alt="photo" />
+            <img src="../Media/Gallery5.jpg" alt="photo" />
+            <img src="../Media/Gallery6.jpg" alt="photo" />
+            <img src="../Media/Gallery3.jpg" alt="photo" />
+            <img src="../Media/Gallery5.jpg" alt="photo" />
           </div>
         </div>
-        <div class="box footer-gallery">
-          <img src="../Media/Gallery1.jpg" alt="photo" />
-          <img src="../Media/Gallery3.jpg" alt="photo" />
-          <img src="../Media/Gallery5.jpg" alt="photo" />
-          <img src="../Media/Gallery6.jpg" alt="photo" />
-          <img src="../Media/Gallery3.jpg" alt="photo" />
-          <img src="../Media/Gallery5.jpg" alt="photo" />
-        </div>
+        <p class="copyright">
+          made with<span> &lt;3 </span>by developer Wesam Abu Taima &copy; 2022
+          .
+        </p>
       </div>
-      <p class="copyright">
-        made with<span> &lt;3 </span>by developer Wesam Abu Taima &copy; 2022
-        .
-      </p>
-    </div>
-  </footer>
-  <!-- End Footer Section -->
-  <script src="../js/main.js"></script>
-</body>
-
+    </footer>
+    <!-- End Footer Section -->
+    <script src="../js/main.js"></script>
+  </body>
 </html>
