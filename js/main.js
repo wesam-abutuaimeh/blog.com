@@ -79,37 +79,20 @@ document.forms[0].onsubmit = function (event) {
 };
 
 /* Request A Discount Form Validation */
-document.forms[1].onsubmit = function (event) {
-  let name = false;
-  let email = false;
-  let phone = false;
-  let textArea = false;
+const userName = document.getElementById("name"),
+  email = document.getElementById("email"),
+  phoneNo = document.getElementById("phone"),
+  textArea = document.getElementById("user-message");
 
-  let nameInput = document.querySelector("#name");
-  let emailInput = document.querySelector("#email");
-  let phoneInput = document.querySelector("#phone");
-  let userMessageInput = document.querySelector("#user-message");
-
-  if (nameInput.value !== "") {
-    name = true;
-  }
-  if (emailInput.value !== "") {
-    email = true;
-  }
-  if (phoneInput.value !== "" && phoneInput.value.length < 10) {
-    phone = true;
-  }
-  if (userMessageInput.value !== "" && userMessageInput.value.length < 250) {
-    textArea = true;
-  }
+document.forms[1].onsubmit = function (e) {
   if (
-    name === false ||
-    email === false ||
-    phone === false ||
-    textArea === false
-  ) {
-    event.preventDefault();
-  }
+    userName.value === "" ||
+    email.value === "" ||
+    phoneNo.value === "" ||
+    textArea.value === ""
+  )
+    e.preventDefault();
+  //TODO => Validation On inputs actulay in Email Adress ,PhoneNo,
 };
 
 //  in stats section
