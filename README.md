@@ -6,7 +6,7 @@
 
 ### Demo Live :)
 
-[Blog-Template Link](https://wesam-abutuaimeh.github.io/personal-blog-me.com/Html/)
+[Blog-Template Link](https://wesam-abutuaimeh.github.io/blog.com/Html)
 
 <br/><br/>
 <img src="Full WebPage Image.png"><img>
