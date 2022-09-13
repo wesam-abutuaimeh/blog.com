@@ -9,7 +9,7 @@
 [Blog-Template Link](https://wesam-abutuaimeh.github.io/blog.com/Html)
 
 <br/><br/>
-<img src="Full WebPage Image.png"><img>
+<img src="/light theme.png/"><img>
 <br/>
 
  <h6 align="center">With my Best Regards ❤</h6>

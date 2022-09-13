@@ -13,6 +13,7 @@ const loader = document.querySelector(".loader"),
   getMood = window.localStorage.getItem("mode");
 
 /* Page Loading popup */
+// TODO => Enhancment Code [ESC button]
 document.onreadystatechange = () => {
   switch (document.readyState) {
     case "complete":
@@ -148,3 +149,5 @@ if (getMood && getMood === "dark") {
   body.classList.add("dark");
   toggleBtn.classList.add("active");
 }
+
+// TODO => Page No -2- ===login && Register===
