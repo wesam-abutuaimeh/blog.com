@@ -13,7 +13,7 @@ const loader = document.querySelector(".loader"),
   getMood = window.localStorage.getItem("mode");
 
 /* Page Loading popup */
-// TODO => Enhancment Code [ESC button]
+
 document.onreadystatechange = () => {
   switch (document.readyState) {
     case "complete":
@@ -93,7 +93,6 @@ document.forms[1].onsubmit = function (e) {
     textArea.value === ""
   )
     e.preventDefault();
-  //TODO => Validation On inputs actulay in Email Adress ,PhoneNo,
 };
 
 //  in stats section
@@ -150,4 +149,25 @@ if (getMood && getMood === "dark") {
   toggleBtn.classList.add("active");
 }
 
-// TODO => Page No -2- ===login && Register===
+const loginBtnInBlog = document.querySelector(".login-btn ");
+
+loginBtnInBlog.addEventListener("click", function () {
+  const popup = document.createElement("div");
+  popup.className = "popup";
+  popup.style.cssText =
+    "position: absolute; width:100%; height:100%; top: 50%;left: 50%; transform: translate(-50%,-50%); font-size: 50px; background-color: #ffffff52; padding: 20px; pointer-events: none; letter-spacing: 1px; z-index: 10;";
+  const p = document.createElement("p");
+
+  p.style.cssText =
+    "position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); ";
+  p.appendChild(document.createTextNode("Soon ... 😀"));
+  popup.appendChild(p);
+  let el = body.appendChild(popup);
+  setTimeout(() => {
+    el.remove();
+    window.open("../Html/login.html");
+  }, 2000);
+});
+
+// TODO => Enhancment Code [ESC button]
+//TODO => Validation On inputs actulay in Email Adress ,PhoneNo,

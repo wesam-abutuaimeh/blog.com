@@ -261,10 +261,14 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
   min-height: 90px;
+  position: relative;
 }
-
+@media (max-width: 991px) {
+  .header .container {
+    padding: 10px;
+  }
+}
 .header .logo {
   color: var(--main-color);
   font-size: 26px;
@@ -285,9 +289,16 @@ i.fas.fa-blog {
     height: 50px;
   }
 }
-
+@media (max-width: 991px) {
+  .header .logo {
+    margin: 0px auto;
+  }
+}
 .header .main-nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 767px) {
@@ -1565,8 +1576,8 @@ p {
   background-color: #ededed;
   padding: 35px 35px;
   border-radius: 50px;
-  display: flex;
-  gap: 15px;
+  flex-direction: row;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
@@ -1631,10 +1642,12 @@ p {
 }
 
 .lastest-events .subscribe-form input[type="submit"] {
+  background-color: #ddd;
+  color: var(--anchor-color);
+  padding: 0;
   overflow: visible;
   width: 130px;
   height: 35px;
-  border: 1px solid #d9d9d9;
   border-radius: 20px;
   cursor: pointer;
   transition: var(--main-transition);
@@ -2529,6 +2542,25 @@ footer .what-i-am {
 /* End Main Page ===Blog=== */
 
 /* Start Page No -2- ===login && Register=== */
+.login-btn {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  color: white;
+  border: none;
+  background: var(--main-btn-gradient);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
 .login-page-container {
   background-color: #273142;
   width: 100%;
@@ -2566,6 +2598,14 @@ form input {
   color: #fafafa;
   caret-color: #0077ff;
 }
+.fa-eye {
+  position: relative;
+  top: -17%;
+  left: 43%;
+  transform: translate(10%, -50%);
+  cursor: pointer;
+}
+
 input:hover {
   border: 1px solid #4b87c4;
 }
@@ -2612,18 +2652,20 @@ input:hover {
   justify-content: space-between;
   width: 300px;
 }
+
+.forget-password a {
+  text-decoration: underline;
+  color: #286bb8;
+}
+
 input[type="checkbox"] {
   width: 25px;
   height: 25px;
 }
-.forget-password a {
-  display: block;
-  color: #286bb8;
-  text-decoration: underline;
-}
-.forget-password span {
+.forget-password label {
   padding-right: 50px;
   color: #a9adb3;
+  position: relative;
 }
 #submit-login-form {
   background-color: #038c43;
@@ -2708,3 +2750,4 @@ input[type="checkbox"] {
   color: #286bb8;
   text-decoration: underline;
 }
+/* TODO => Custom Radio Input With Css3*/
