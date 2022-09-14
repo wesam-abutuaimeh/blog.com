@@ -22,6 +22,9 @@ document.onreadystatechange = () => {
     case "loading":
       loader.classList.add("show");
       break;
+    case "complete":
+      loader.classList.add("remove");
+      break;
   }
 };
 
