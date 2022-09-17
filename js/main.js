@@ -14,7 +14,7 @@ const loader = document.querySelector(".loader"),
 
 /* Page Loading popup */
 
-document.onreadystatechange = () => {
+document.onreadystatechange = (e) => {
   switch (document.readyState) {
     case "complete":
       loader.classList.add("remove");
@@ -22,9 +22,11 @@ document.onreadystatechange = () => {
     case "interactive":
       loader.classList.add("show");
       break;
-    case "loading":
+    /*
+      case "loading":
       loader.classList.add("show");
       break;
+    */
   }
 };
 

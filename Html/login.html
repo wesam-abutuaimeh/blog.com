@@ -37,8 +37,13 @@
       <!-- End Form Side -->
       <div class="form-side">
         <h1 class="login-massage">login to your account</h1>
+
         <form action="">
           <input type="email" name="mail" id="mail" placeholder="Email" />
+          <p class="forget-password-msg">
+            enter the email address associted with your account, and we'll email
+            you a link to rest your password .
+          </p>
           <input
             type="password"
             name="password"
@@ -48,7 +53,8 @@
           <div class="forget-password">
             <input type="checkbox" name="remember-me" id="remember-me" />
             <label for="Remember me">Remember me</label>
-            <a href="">forget password?</a>
+
+            <a href="" class="forget-password-link">forget password?</a>
           </div>
           <input type="submit" id="submit-login-form" value="Log In" />
         </form>

@@ -27,5 +27,26 @@ passwordToggle.addEventListener("click", () => {
     password.setAttribute("type", "text");
   } else password.setAttribute("type", "password");
 });
+
+const forgetPassword = document.querySelector(".forget-password-link");
+const formSide = document.querySelector(".form-side");
+// console.log('');
+forgetPassword.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementsByTagName("title")[0].textContent =
+    "Forget Password Page";
+  document.querySelector(".login-massage").textContent = "forget password!";
+  document.querySelector('[type="password"]').style.display = "none";
+  document.querySelector(".forget-password").style.display = "none";
+  document.querySelector(".fa-eye").style.display = "none";
+  document.querySelector(".forget-password-msg").style.display = "block";
+  loginBtn.value = "send reset link";
+  loginBtn.style.cssText =
+    "background-color: #232c3b; border: 1px solid #3b4453;";
+  document.querySelector(".other-sign-methods").style.visibility = "hidden";
+  document.querySelector(".form-side-footer p").textContent = "go back to";
+  document.querySelector(".form-side-footer a").textContent = "login";
+});
+
 // TODO => Page No -2- ===login && Register===
 // TODO => Popup For Chating
