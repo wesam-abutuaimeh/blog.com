@@ -44,7 +44,7 @@ body.dark {
   --paragraph-color: white;
   --nav-bar-shadow: 0;
   --nav-anchor: var(--anchor-color);
-  --header-color: #121212;
+  --header-color: #191919;
   --header-anchor-hover: #0000;
   --landing-section-before: #121212;
   --features-shape-backcolor: #121212;
@@ -1437,12 +1437,14 @@ p {
   position: absolute;
   top: 150px;
   right: 0;
+  z-index: -1;
 }
 
 .lastest-events .down-dots {
   position: absolute;
   bottom: 30px;
   left: 0;
+  z-index: -1;
 }
 
 @media screen and (max-width: 767px) {
@@ -2508,10 +2510,10 @@ footer .what-i-am {
   background-color: #ededed;
   width: 170px;
   height: 70px;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  translate: -50% -20%;
+  transform: translate(-50%, -50%);
   border-radius: 70px;
   cursor: pointer;
 }
