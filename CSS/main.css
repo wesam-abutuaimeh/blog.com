@@ -2513,7 +2513,9 @@ footer .what-i-am {
   left: 50%;
   translate: -50% -50%;
   border-radius: 70px;
+  cursor: pointer;
 }
+
 .toggle-btn::before {
   content: "";
   position: absolute;
