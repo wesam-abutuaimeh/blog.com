@@ -171,5 +171,8 @@ loginBtnInBlog.addEventListener("click", function () {
   }, 2000);
 });
 
+let copyrightYear = new Date().getFullYear(); // Update CopyRight Year In Footer Automatically Depnd On Date Constructor
+document.querySelector(".copyright-year").textContent = copyrightYear;
+
 // TODO => Enhancment Code [ESC button]
 //TODO => Validation On inputs actulay in Email Adress ,PhoneNo,

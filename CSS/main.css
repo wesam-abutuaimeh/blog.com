@@ -483,7 +483,9 @@ i.fas.fa-blog {
 }
 
 .setting-box i {
-  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .setting-box .setting-box-container {
@@ -524,7 +526,7 @@ i.fas.fa-blog {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .colors-options li:first-child {
@@ -1813,7 +1815,7 @@ p {
 
 .pricing-plan .price-plan-box a:hover {
   background-image: var(--main-btn-gradient);
-  color: var(--anchor-color);
+  color: white;
 }
 
 /* End Pricing Plan Section Style */
@@ -2343,11 +2345,6 @@ footer .what-i-am {
   margin: 50px 0 0;
   border-top: 1px solid #444;
   text-transform: capitalize;
-}
-
-.footer .copyright span {
-  color: rgba(192, 17, 17, 0.712);
-  margin: 0 7px 0 7px;
 }
 
 /* End Footer Section Style */
