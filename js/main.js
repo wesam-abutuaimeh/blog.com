@@ -174,5 +174,26 @@ loginBtnInBlog.addEventListener("click", function () {
 let copyrightYear = new Date().getFullYear(); // Update CopyRight Year In Footer Automatically Depnd On Date Constructor
 document.querySelector(".copyright-year").textContent = copyrightYear;
 
+const targetDate = new Date("Jan 1 ,2024 12:00:59").getTime(); // Target Date //END
+
+let interval = setInterval(() => {
+  const currentDate = new Date().getTime(); // Start Date
+  let elapsed = targetDate - currentDate;
+
+  let years = Math.trunc(elapsed / (1000 * 60 * 60 * 24 * 365));
+  let days = Math.trunc(elapsed / (1000 * 60 * 60 * 24));
+  let hours = Math.trunc((elapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.trunc((elapsed % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.trunc((elapsed % (1000 * 60)) / 1000);
+
+  document.querySelector(".years").innerHTML = years;
+  document.querySelector(".days").innerHTML = days;
+  document.querySelector(".hours").innerHTML = hours;
+  document.querySelector(".minutes").innerHTML = minutes;
+  document.querySelector(".seconds").innerHTML = seconds;
+
+  elapsed == 0 ? clearInterval(interval) : "";
+}, 1000);
+
 // TODO => Enhancment Code [ESC button]
-//TODO => Validation On inputs actulay in Email Adress ,PhoneNo,
+//TODO => Validation On inputs actulay in Email Adress ,PhoneNo
