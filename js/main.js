@@ -16,7 +16,7 @@ const loader = document.querySelector(".loader"),
 
 // TODO => Enhancment Code [ESC button]
 document.onreadystatechange = () => {
-  !document.readyState === "complete"
+  !(document.readyState === "complete" && document.readyState === "interactive")
     ? loader.classList.add("show")
     : loader.classList.add("remove");
 };
