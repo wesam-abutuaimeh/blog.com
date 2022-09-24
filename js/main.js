@@ -14,21 +14,9 @@ const loader = document.querySelector(".loader"),
 
 /* Page Loading popup */
 
-document.onreadystatechange = (e) => {
-  switch (document.readyState) {
-    case "complete":
-      loader.classList.add("remove");
-      break;
-    case "interactive":
-      loader.classList.add("show");
-      break;
-    /*
-      case "loading":
-      loader.classList.add("show");
-      break;
-    */
-  }
-};
+// TODO => Enhancment Code [ESC button]
+document.onreadystatechange = () =>
+  !document.readyState === "complete" ? loader.classList.add("show") : "";
 
 /* Welcome phrase to the user who opens the browser console */
 console.log(
@@ -48,11 +36,6 @@ if (localStorage.getItem("colors")) {
   document.documentElement.style.setProperty(
     "--main-color",
     localStorage.getItem("colors")
-  );
-  console.log(
-    `The Hex Code For The Color I present Now Is \`${localStorage.getItem(
-      "colors"
-    )}\``
   );
 }
 
@@ -174,7 +157,7 @@ loginBtnInBlog.addEventListener("click", function () {
 let copyrightYear = new Date().getFullYear(); // Update CopyRight Year In Footer Automatically Depnd On Date Constructor
 document.querySelector(".copyright-year").textContent = copyrightYear;
 
-const targetDate = new Date("Jan 1 ,2024 12:00:59").getTime(); // Target Date //END
+const targetDate = new Date("Dec 31 ,2022 11:59:59").getTime(); // Target Date //END
 
 let interval = setInterval(() => {
   const currentDate = new Date().getTime(); // Start Date
@@ -195,5 +178,4 @@ let interval = setInterval(() => {
   elapsed == 0 ? clearInterval(interval) : "";
 }, 1000);
 
-// TODO => Enhancment Code [ESC button]
 //TODO => Validation On inputs actulay in Email Adress ,PhoneNo
