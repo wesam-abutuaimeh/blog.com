@@ -15,8 +15,11 @@ const loader = document.querySelector(".loader"),
 /* Page Loading popup */
 
 // TODO => Enhancment Code [ESC button]
-document.onreadystatechange = () =>
-  !document.readyState === "complete" ? loader.classList.add("show") : "";
+document.onreadystatechange = () => {
+  !document.readyState === "complete"
+    ? loader.classList.add("show")
+    : loader.classList.add("remove");
+};
 
 /* Welcome phrase to the user who opens the browser console */
 console.log(

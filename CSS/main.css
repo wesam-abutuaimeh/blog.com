@@ -2393,28 +2393,6 @@ footer .what-i-am {
 /* End Scroll Btn Style*/
 
 /* Loading animation if and only if document.readyState!=="complete" */
-.loader {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  height: 175px;
-  overflow: hidden;
-  width: 100%;
-  align-items: center;
-  background: linear-gradient(to right, #7450fe, #21d397);
-}
-
-.loader.show {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 10000;
-}
-
-.loader.remove {
-  display: none;
-}
-
 .waterfall div {
   -webkit-animation: waterfall 1.5s infinite;
   animation: waterfall 1.5s infinite;
@@ -2500,6 +2478,27 @@ footer .what-i-am {
   }
 }
 
+.loader {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 0px;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+  background: linear-gradient(to right, #7450fe, #21d397);
+}
+
+.loader.show {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+.loader.remove {
+  display: none;
+}
 /* End Loading animation Style */
 
 /* Start Button To Choose Theme Style */
