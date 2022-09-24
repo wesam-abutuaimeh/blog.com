@@ -2208,6 +2208,7 @@ p {
 @media screen and (max-width: 767px) {
   .footer .box h3 {
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .footer .box .social {
@@ -2262,6 +2263,12 @@ footer .what-i-am {
   color: #b9b9b9;
   text-align: start;
   padding: 0;
+}
+@media (max-width: 767px) {
+  .footer .box .text {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 .footer .box .links li {
@@ -2363,7 +2370,7 @@ footer .what-i-am {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   position: fixed;
-  right: 20px;
+  right: -50px;
   bottom: 20px;
   z-index: 100;
   cursor: pointer;

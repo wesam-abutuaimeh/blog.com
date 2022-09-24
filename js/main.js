@@ -1,47 +1,31 @@
 "use-strict";
-/* Variables Declrations [roots] */
-const loader = document.querySelector(".loader"),
-  settingBox = document.querySelector(".setting-box"),
-  subscribeVaild = document.querySelector("#email"),
-  scroolBtn = document.querySelector(".to-top-butotn"),
-  stateSection = document.getElementById("stats"),
-  stats = document.querySelectorAll(".stats .num"),
-  section = document.querySelector(".skills"),
-  spans = document.querySelectorAll(".progress span"),
-  body = document.querySelector("body"),
-  toggleBtn = document.querySelector(".toggle-btn"),
-  getMood = window.localStorage.getItem("mode");
 
-/* Page Loading popup */
-
-// TODO => Enhancment Code [ESC button]
-document.onreadystatechange = () => {
-  !(document.readyState === "complete" && document.readyState === "interactive")
-    ? loader.classList.add("show")
-    : loader.classList.add("remove");
-};
-
-/* Welcome phrase to the user who opens the browser console */
 console.log(
   "%cWelcom To Wesam%cBlog",
   "color:red; font-size:40px",
   "background-color:blue;color:white; font-size:40px"
 );
 
-/* colors option from setting box */
+const loader = document.querySelector(".loader");
+document.onreadystatechange = () => {
+  !document.readyState
+    ? loader.classList.add("show")
+    : loader.classList.add("remove");
+};
 
+/* colors option from setting box */
+const settingBox = document.querySelector(".setting-box"),
+  getMood = window.localStorage.getItem("mode");
 document.querySelector(".icon").onclick = (_) => {
   settingBox.classList.toggle("show");
   icon.classList.toggle("fa-spin");
 };
-
 if (localStorage.getItem("colors")) {
   document.documentElement.style.setProperty(
     "--main-color",
     localStorage.getItem("colors")
   );
 }
-
 let colorsList = document.querySelectorAll(".colors-options li");
 colorsList.forEach((li) => {
   li.addEventListener("click", (event) => {
@@ -54,7 +38,7 @@ colorsList.forEach((li) => {
 });
 
 /* Subscribe Form Validation */
-
+const subscribeVaild = document.querySelector("#email");
 document.forms[0].onsubmit = function (event) {
   let emailSubscribeValid = false;
   if (subscribeVaild !== "") {
@@ -83,7 +67,6 @@ document.forms[1].onsubmit = function (e) {
     e.preventDefault();
 };
 
-//  in stats section
 let started = false;
 function increaseNums(element) {
   const goal = element.dataset.goal;
@@ -92,13 +75,21 @@ function increaseNums(element) {
     if (element.textContent === goal) {
       clearInterval(counter);
     }
-  }, 500 / goal);
+  }, 10 / goal);
 }
 
+const scroolBtn = document.querySelector(".to-top-butotn"),
+  stateSection = document.getElementById("stats"),
+  stats = document.querySelectorAll(".stats .num"),
+  section = document.querySelector(".skills"),
+  spans = document.querySelectorAll(".progress span");
 window.onscroll = function () {
   if (window.scrollY >= 623) {
-    scroolBtn.style.display = "block";
-  } else scroolBtn.style.display = "none";
+    scroolBtn.style.cssText = "display:block;right: 20px;";
+  }
+  if (window.scrollY <= 623) {
+    scroolBtn.style.display = "none";
+  }
   scroolBtn.onclick = function () {
     window.scrollTo({
       top: 0,
@@ -123,7 +114,8 @@ window.onscroll = function () {
   }
 };
 
-/* Add Dark Mood In Setting */
+const body = document.querySelector("body"),
+  toggleBtn = document.querySelector(".toggle-btn");
 toggleBtn.addEventListener("click", () => {
   body.classList.toggle("dark");
   toggleBtn.classList.toggle("active");
@@ -138,14 +130,12 @@ if (getMood && getMood === "dark") {
 }
 
 const loginBtnInBlog = document.querySelector(".login-btn ");
-
 loginBtnInBlog.addEventListener("click", function () {
   const popup = document.createElement("div");
   popup.className = "popup";
   popup.style.cssText =
     "position: absolute; width:100%; height:100%; top: 50%;left: 50%; transform: translate(-50%,-50%); font-size: 50px; background-color: #ffffff52; padding: 20px; pointer-events: none; letter-spacing: 1px; z-index: 10;";
   const p = document.createElement("p");
-
   p.style.cssText =
     "position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); ";
   p.appendChild(document.createTextNode("Soon ... 😀"));
@@ -157,21 +147,15 @@ loginBtnInBlog.addEventListener("click", function () {
   }, 2000);
 });
 
-let copyrightYear = new Date().getFullYear(); // Update CopyRight Year In Footer Automatically Depnd On Date Constructor
-document.querySelector(".copyright-year").textContent = copyrightYear;
-
 const targetDate = new Date("Dec 31 ,2022 11:59:59").getTime(); // Target Date //END
-
 let interval = setInterval(() => {
   const currentDate = new Date().getTime(); // Start Date
   let elapsed = targetDate - currentDate;
-
   let years = Math.trunc(elapsed / (1000 * 60 * 60 * 24 * 365));
   let days = Math.trunc(elapsed / (1000 * 60 * 60 * 24));
   let hours = Math.trunc((elapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.trunc((elapsed % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.trunc((elapsed % (1000 * 60)) / 1000);
-
   document.querySelector(".years").innerHTML = years;
   document.querySelector(".days").innerHTML = days;
   document.querySelector(".hours").innerHTML = hours;
@@ -181,4 +165,7 @@ let interval = setInterval(() => {
   elapsed == 0 ? clearInterval(interval) : "";
 }, 1000);
 
-//TODO => Validation On inputs actulay in Email Adress ,PhoneNo
+const copyrightYear = new Date().getFullYear();
+document.querySelector(".copyright-year").textContent = copyrightYear;
+
+//TODO => Validation On inputs actulay in Email Adress ,PhoneNo Using regex
