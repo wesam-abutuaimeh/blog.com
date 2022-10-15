@@ -1,4 +1,5 @@
 "use-strict";
+import { foEvents } from "./module.js";
 
 console.log(
   "%cWelcom To Wesam%cBlog",
@@ -6,11 +7,16 @@ console.log(
   "background-color:blue;color:white; font-size:40px"
 );
 
+console.log(
+  "%cStop! %c\nThis is a browser feature intended for developers. ",
+  "-webkit-text-fill-color:red; -webkit-text-stroke: 1px #333; font-size:40px;",
+  "color:#000; font-size:20px"
+);
+
 const loader = document.querySelector(".loader");
 document.onreadystatechange = () => {
-  !document.readyState
-    ? loader.classList.add("show")
-    : loader.classList.add("remove");
+  !document.readyState ? loader.classList.add("show") : ""; // loader.classList.add("remove")
+  console.log("performance: " + performance.now() + "\tMillSeconds");
 };
 
 /* colors option from setting box */
@@ -26,6 +32,7 @@ if (localStorage.getItem("colors")) {
     localStorage.getItem("colors")
   );
 }
+
 let colorsList = document.querySelectorAll(".colors-options li");
 colorsList.forEach((li) => {
   li.addEventListener("click", (event) => {
@@ -38,17 +45,18 @@ colorsList.forEach((li) => {
 });
 
 /* Subscribe Form Validation */
-const subscribeVaild = document.querySelector("#email");
-document.forms[0].onsubmit = function (event) {
-  let emailSubscribeValid = false;
-  if (subscribeVaild !== "") {
-    emailSubscribeValid = true;
-    console.log("true");
-  }
-  if (emailSubscribeValid === false) {
-    event.preventDefault();
-    console.log("prevent");
-  }
+const subscribeVaild = document.querySelector(".subscribe-btn");
+document.querySelector(".subscribe-btn").onclick = function (event) {
+  // let emailSubscribeValid = false;
+  // if (subscribeVaild !== "") {
+  //   emailSubscribeValid = true;
+  //   console.log("true");
+  // }
+  // if (emailSubscribeValid === false) {
+  //   event.preventDefault();
+  //   console.log("prevent");
+  // }
+  event.preventDefault();
 };
 
 /* Request A Discount Form Validation */
@@ -82,7 +90,8 @@ const scroolBtn = document.querySelector(".to-top-butotn"),
   stateSection = document.getElementById("stats"),
   stats = document.querySelectorAll(".stats .num"),
   section = document.querySelector(".skills"),
-  spans = document.querySelectorAll(".progress span");
+  fillWidthSpan = document.querySelectorAll(".progress span");
+
 window.onscroll = function () {
   if (window.scrollY >= 623) {
     scroolBtn.style.cssText = "display:block;right: 20px;";
@@ -90,6 +99,7 @@ window.onscroll = function () {
   if (window.scrollY <= 623) {
     scroolBtn.style.display = "none";
   }
+
   scroolBtn.onclick = function () {
     window.scrollTo({
       top: 0,
@@ -108,7 +118,7 @@ window.onscroll = function () {
   }
 
   if (window.scrollY >= section.offsetTop) {
-    spans.forEach((span) => {
+    fillWidthSpan.forEach((span) => {
       span.style.width = span.dataset.width;
     });
   }
@@ -147,25 +157,10 @@ loginBtnInBlog.addEventListener("click", function () {
   }, 2000);
 });
 
-const targetDate = new Date("Dec 31 ,2022 11:59:59").getTime(); // Target Date //END
-let interval = setInterval(() => {
-  const currentDate = new Date().getTime(); // Start Date
-  let elapsed = targetDate - currentDate;
-  let years = Math.trunc(elapsed / (1000 * 60 * 60 * 24 * 365));
-  let days = Math.trunc(elapsed / (1000 * 60 * 60 * 24));
-  let hours = Math.trunc((elapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.trunc((elapsed % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.trunc((elapsed % (1000 * 60)) / 1000);
-  document.querySelector(".years").innerHTML = years;
-  document.querySelector(".days").innerHTML = days;
-  document.querySelector(".hours").innerHTML = hours;
-  document.querySelector(".minutes").innerHTML = minutes;
-  document.querySelector(".seconds").innerHTML = seconds;
-
-  elapsed == 0 ? clearInterval(interval) : "";
-}, 1000);
+foEvents("Dec 31 ,2022 23:59:59");
 
 const copyrightYear = new Date().getFullYear();
 document.querySelector(".copyright-year").textContent = copyrightYear;
 
 //TODO => Validation On inputs actulay in Email Adress ,PhoneNo Using regex
+// TODO => Decete Ads Blocker .

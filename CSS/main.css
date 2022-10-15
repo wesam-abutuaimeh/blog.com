@@ -1620,7 +1620,7 @@ p {
   border-radius: 20px;
   flex: 1;
   caret-color: var(--main-color) 5px;
-
+  color: #000;
   background-color: #ffffffbf;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -2486,14 +2486,14 @@ footer .what-i-am {
 }
 
 .loader {
-  display: flex;
   position: relative;
+  display: flex;
   justify-content: center;
-  height: 0px;
-  overflow: hidden;
-  width: 100%;
   align-items: center;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(to right, #7450fe, #21d397);
+  overflow: hidden;
 }
 
 .loader.show {
@@ -2506,6 +2506,7 @@ footer .what-i-am {
 .loader.remove {
   display: none;
 }
+
 /* End Loading animation Style */
 
 /* Start Button To Choose Theme Style */
