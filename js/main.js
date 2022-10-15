@@ -15,7 +15,9 @@ console.log(
 
 const loader = document.querySelector(".loader");
 document.onreadystatechange = () => {
-  !document.readyState ? loader.classList.add("show") : ""; // loader.classList.add("remove")
+  document.readyState === "loading" || document.readyState === "interactive"
+    ? loader.classList.add("show")
+    : loader.classList.add("remove");
   console.log("performance: " + performance.now() + "\tMillSeconds");
 };
 
