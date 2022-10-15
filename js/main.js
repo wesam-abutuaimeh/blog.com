@@ -15,9 +15,10 @@ console.log(
 
 const loader = document.querySelector(".loader");
 document.onreadystatechange = () => {
-  document.readyState === "loading" || document.readyState === "interactive"
-    ? loader.classList.add("show")
-    : loader.classList.add("remove");
+  if (document.readyState === "loading") {
+    loader.classList.add("show");
+  } else loader.classList.add("remove");
+
   console.log("performance: " + performance.now() + "\tMillSeconds");
 };
 
