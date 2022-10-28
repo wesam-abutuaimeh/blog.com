@@ -15,11 +15,9 @@ console.log(
 
 const loader = document.querySelector(".loader");
 document.onreadystatechange = () => {
-  if (document.readyState === "loading") {
+  if (document.readystatechange === "loading") {
     loader.classList.add("show");
   } else loader.classList.add("remove");
-
-  console.log("performance: " + performance.now() + "\tMillSeconds");
 };
 
 /* colors option from setting box */
@@ -92,8 +90,8 @@ function increaseNums(element) {
 const scroolBtn = document.querySelector(".to-top-butotn"),
   stateSection = document.getElementById("stats"),
   stats = document.querySelectorAll(".stats .num"),
-  section = document.querySelector(".skills"),
-  fillWidthSpan = document.querySelectorAll(".progress span");
+  skillsSection = document.querySelector(".skills"),
+  progressSpans = document.querySelectorAll(".progress span");
 
 window.onscroll = function () {
   if (window.scrollY >= 623) {
@@ -120,13 +118,18 @@ window.onscroll = function () {
     started = true;
   }
 
-  if (window.scrollY >= section.offsetTop) {
-    fillWidthSpan.forEach((span) => {
+  if (window.scrollY >= skillsSection.offsetTop) {
+    progressSpans.forEach((span) => {
       span.style.width = span.dataset.width;
     });
   }
 };
-
+/*
+console.log(show_Progress_Skill_As_Text);
+      show_Progress_Skill_As_Text.forEach((span) => {
+        span.textContent = span.dataset.width;
+      });
+*/
 const body = document.querySelector("body"),
   toggleBtn = document.querySelector(".toggle-btn");
 toggleBtn.addEventListener("click", () => {
@@ -165,5 +168,6 @@ foEvents("Dec 31 ,2022 23:59:59");
 const copyrightYear = new Date().getFullYear();
 document.querySelector(".copyright-year").textContent = copyrightYear;
 
+console.log("performance: " + performance.now() + "\tMillSeconds");
 //TODO => Validation On inputs actulay in Email Adress ,PhoneNo Using regex
 // TODO => Decete Ads Blocker .
