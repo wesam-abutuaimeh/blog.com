@@ -167,9 +167,8 @@ foEvents("Dec 31 ,2022 23:59:59");
 
 const pageRoot = document.documentElement;
 const scrollBar = document.querySelector(".scroll-bar");
-let pageHeight = pageRoot.scrollHeight - pageRoot.clientHeight;
-window.addEventListener("scroll", () => {
-  console.log(pageRoot.scrollTop);
+const pageHeight = pageRoot.scrollHeight - pageRoot.clientHeight;
+window.addEventListener("scroll", (_) => {
   scrollBar.style.width = `${(pageRoot.scrollTop / pageHeight) * 100}%`;
 });
 
