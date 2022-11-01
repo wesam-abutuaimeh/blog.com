@@ -208,6 +208,23 @@ a {
   background-color: #d5d5d5;
 }
 
+/* Start scroll-bar Style */
+.scroll-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 0px;
+  height: 6px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  background-color: var(--main-color);
+}
+/* End scroll-bar Style */
+
 /*Animation part*/
 @keyframes left-move-anmiation {
   50% {

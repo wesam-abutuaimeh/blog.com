@@ -165,9 +165,18 @@ loginBtnInBlog.addEventListener("click", function () {
 
 foEvents("Dec 31 ,2022 23:59:59");
 
+const pageRoot = document.documentElement;
+const scrollBar = document.querySelector(".scroll-bar");
+let pageHeight = pageRoot.scrollHeight - pageRoot.clientHeight;
+window.addEventListener("scroll", () => {
+  console.log(pageRoot.scrollTop);
+  scrollBar.style.width = `${(pageRoot.scrollTop / pageHeight) * 100}%`;
+});
+
 const copyrightYear = new Date().getFullYear();
 document.querySelector(".copyright-year").textContent = copyrightYear;
 
 console.log("performance: " + performance.now() + "\tMillSeconds");
+
 //TODO => Validation On inputs actulay in Email Adress ,PhoneNo Using regex
 // TODO => Decete Ads Blocker .
