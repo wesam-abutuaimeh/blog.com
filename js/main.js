@@ -15,7 +15,8 @@ console.log(
 
 const loader = document.querySelector(".loader");
 document.onreadystatechange = () => {
-  if (document.readystatechange === "loading") {
+  console.log(document.readyState);
+  if (document.readyState === "loading") {
     loader.classList.add("show");
   } else loader.classList.add("remove");
 };
@@ -48,15 +49,6 @@ colorsList.forEach((li) => {
 /* Subscribe Form Validation */
 const subscribeVaild = document.querySelector(".subscribe-btn");
 document.querySelector(".subscribe-btn").onclick = function (event) {
-  // let emailSubscribeValid = false;
-  // if (subscribeVaild !== "") {
-  //   emailSubscribeValid = true;
-  //   console.log("true");
-  // }
-  // if (emailSubscribeValid === false) {
-  //   event.preventDefault();
-  //   console.log("prevent");
-  // }
   event.preventDefault();
 };
 
@@ -124,12 +116,7 @@ window.onscroll = function () {
     });
   }
 };
-/*
-console.log(show_Progress_Skill_As_Text);
-      show_Progress_Skill_As_Text.forEach((span) => {
-        span.textContent = span.dataset.width;
-      });
-*/
+
 const body = document.querySelector("body"),
   toggleBtn = document.querySelector(".toggle-btn");
 toggleBtn.addEventListener("click", () => {
@@ -163,7 +150,7 @@ loginBtnInBlog.addEventListener("click", function () {
   }, 2000);
 });
 
-foEvents("Dec 31 ,2022 23:59:59");
+foEvents("Dec 31 ,2023 23:59:59");
 
 const pageRoot = document.documentElement;
 const scrollBar = document.querySelector(".scroll-bar");
@@ -175,7 +162,4 @@ window.addEventListener("scroll", (_) => {
 const copyrightYear = new Date().getFullYear();
 document.querySelector(".copyright-year").textContent = copyrightYear;
 
-console.log("performance: " + performance.now() + "\tMillSeconds");
-
-//TODO => Validation On inputs actulay in Email Adress ,PhoneNo Using regex
 // TODO => Decete Ads Blocker .

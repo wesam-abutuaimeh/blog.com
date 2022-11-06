@@ -36,6 +36,7 @@ body {
   --special-background-color: #ececec;
   --testimonials-img-padding-color: #ececec;
 }
+
 body.dark {
   /* root values: [dark theme]*/
   background-color: #121212;
@@ -1173,7 +1174,6 @@ p {
 /* Start Team Member Section Style*/
 .team-member {
   padding: var(--main-padding);
-
   position: relative;
 }
 
@@ -2193,6 +2193,7 @@ p {
   color: white;
 }
 /* End contact Form Style */
+
 /* Start Footer Section Style */
 .footer {
   background-color: #121212;
@@ -2412,7 +2413,6 @@ footer .what-i-am {
   color: white;
   font-size: 18px;
 }
-
 /* End Scroll Btn Style*/
 
 /* Loading animation if and only if document.readyState!=="complete" */
@@ -2563,6 +2563,7 @@ footer .what-i-am {
   background-color: #121212;
 }
 /* End Button To Choose Theme Style */
+
 /* End Main Page ===Blog=== */
 
 /* Start Page No -2- ===login && Register=== */
@@ -2585,6 +2586,7 @@ footer .what-i-am {
   letter-spacing: 1px;
   font-size: 14px;
 }
+
 .login-page-container {
   background-color: #273142;
   width: 100%;
@@ -2592,6 +2594,7 @@ footer .what-i-am {
   display: flex;
   justify-content: space-between;
 }
+
 .form-side {
   width: 100%;
   display: flex;
@@ -2599,19 +2602,23 @@ footer .what-i-am {
   justify-content: center;
   align-items: center;
 }
+
 .login-massage {
   color: #fafafd;
 }
+
 .login-massage::first-letter {
   color: #ff2121c2;
   text-transform: capitalize;
 }
+
 form {
   display: flex;
   flex-direction: column;
   row-gap: 25px;
   align-items: center;
 }
+
 form input {
   background-color: #273142;
   width: 300px;
@@ -2622,6 +2629,7 @@ form input {
   color: #fafafa;
   caret-color: #0077ff;
 }
+
 .fa-eye {
   position: relative;
   top: -17%;
@@ -2633,6 +2641,7 @@ form input {
 input:hover {
   border: 1px solid #4b87c4;
 }
+
 .side {
   background-image: url(../Media/login.jpg);
   background-size: cover;
@@ -2640,6 +2649,7 @@ input:hover {
   height: 100vh;
   background-repeat: no-repeat;
 }
+
 .side .overlay {
   position: absolute;
   content: "";
@@ -2647,11 +2657,13 @@ input:hover {
   height: 100%;
   background-color: #000000b0;
 }
+
 @media (max-width: 767px) {
   .side {
     display: none;
   }
 }
+
 .hero-paragraph {
   position: absolute;
   top: 80%;
@@ -2664,6 +2676,7 @@ input:hover {
   padding-left: 30px;
   font-size: 18px;
 }
+
 .hero-paragraph p {
   text-align: start;
   line-height: 1.8;
@@ -2686,11 +2699,13 @@ input[type="checkbox"] {
   width: 25px;
   height: 25px;
 }
+
 .forget-password label {
   padding-right: 50px;
   color: #a9adb3;
   position: relative;
 }
+
 #submit-login-form {
   background-color: #038c43;
   font-size: 20px;
@@ -2701,6 +2716,7 @@ input[type="checkbox"] {
   text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
   box-shadow: 0 2px #0000000b;
 }
+
 .break-line {
   font-size: 20px;
   font-weight: 500;
@@ -2709,6 +2725,7 @@ input[type="checkbox"] {
   padding: 10px 0;
   position: relative;
 }
+
 .break-line ::before {
   content: "";
   position: absolute;
@@ -2723,6 +2740,7 @@ input[type="checkbox"] {
   -o-transform: translate(-50%, -50%);
   background-color: #47505e;
 }
+
 .break-line ::after {
   content: "";
   position: absolute;
@@ -2737,12 +2755,14 @@ input[type="checkbox"] {
   -o-transform: translate(-50%, -50%);
   background-color: #47505e;
 }
+
 .other-sign-methods {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
   text-transform: capitalize;
 }
+
 .other-sign-methods button {
   display: flex;
   width: 300px;
@@ -2757,24 +2777,27 @@ input[type="checkbox"] {
 .other-sign-methods button img {
   padding-right: 50px;
 }
+
 .form-side-footer {
   display: flex;
   align-items: center;
   position: absolute;
   bottom: 0;
 }
+
 .form-side-footer p {
   color: #a9adb3;
   text-transform: lowercase;
 }
+
 .form-side-footer p::first-letter {
   text-transform: capitalize;
 }
+
 .form-side-footer a {
   color: #286bb8;
   text-decoration: underline;
 }
-/* TODO => Custom Radio Input With Css3*/
 
 .forget-password-msg {
   display: none;
