@@ -14,12 +14,13 @@ console.log(
 );
 
 const loader = document.querySelector(".loader");
-document.onreadystatechange = () => {
-  console.log(document.readyState);
-  if (document.readyState === "loading") {
+document.addEventListener("readystatechange", (event) => {
+  if (document.readyState === "interactive") {
+    loader.classList.add("show");
+  } else if (event.target.readyState === "loading") {
     loader.classList.add("show");
   } else loader.classList.add("remove");
-};
+});
 
 /* colors option from setting box */
 const settingBox = document.querySelector(".setting-box"),
