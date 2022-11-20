@@ -22,6 +22,13 @@ document.addEventListener("readystatechange", (event) => {
   } else loader.classList.add("remove");
 });
 
+const textIntroAnimation = document.querySelector(".landing-section .text"),
+  imageIntroAnimation = document.querySelector(".landing-section .image > img");
+window.addEventListener("load", (e) => {
+  textIntroAnimation.classList.add("active");
+  imageIntroAnimation.classList.add("active");
+});
+
 /* colors option from setting box */
 const settingBox = document.querySelector(".setting-box"),
   getMood = window.localStorage.getItem("mode");
