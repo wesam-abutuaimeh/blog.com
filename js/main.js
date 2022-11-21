@@ -13,14 +13,10 @@ console.log(
   "color:#000; font-size:20px"
 );
 
-const loader = document.querySelector(".loader");
-document.addEventListener("readystatechange", (event) => {
-  if (document.readyState === "interactive") {
-    loader.classList.add("show");
-  } else if (event.target.readyState === "loading") {
-    loader.classList.add("show");
-  } else loader.classList.add("remove");
-});
+const loadingArea = document.querySelector(".loader");
+document.onreadystatechange = () => {
+  !document.readyState === "complete" ? loadingArea.classList.add("show") : "";
+};
 
 const textIntroAnimation = document.querySelector(".landing-section .text"),
   imageIntroAnimation = document.querySelector(".landing-section .image > img");
