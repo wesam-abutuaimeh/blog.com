@@ -13,9 +13,11 @@ console.log(
   "color:#000; font-size:20px"
 );
 
-const loadingArea = document.querySelector(".loader");
+const preloader = document.querySelector(".preloader");
 document.onreadystatechange = () => {
-  !document.readyState === "complete" ? loadingArea.classList.add("show") : "";
+  document.onreadystatechange.readyState === "complete"
+    ? preloader.classList.add("show")
+    : preloader.classList.add("remove");
 };
 
 const textIntroAnimation = document.querySelector(".landing-section .text"),
@@ -28,7 +30,7 @@ window.addEventListener("load", (e) => {
 /* colors option from setting box */
 const settingBox = document.querySelector(".setting-box"),
   getMood = window.localStorage.getItem("mode");
-document.querySelector(".icon").onclick = (_) => {
+document.querySelector(".icon").onclick = () => {
   settingBox.classList.toggle("show");
   icon.classList.toggle("fa-spin");
 };
@@ -163,7 +165,12 @@ window.addEventListener("scroll", (_) => {
   scrollBar.style.width = `${(pageRoot.scrollTop / pageHeight) * 100}%`;
 });
 
+const spikes = document.querySelectorAll(".spikes");
+if (body.classList.contains("dark")) {
+  spikes.forEach((spike) => {
+    spike.remove();
+  });
+}
+
 const copyrightYear = new Date().getFullYear();
 document.querySelector(".copyright-year").textContent = copyrightYear;
-
-// TODO => Decete Ads Blocker .
