@@ -15,7 +15,7 @@ console.log(
 
 const preloader = document.querySelector(".preloader");
 document.onreadystatechange = () => {
-  document.readyState !== "complete"
+  document.readyState === "loading" || document.readyState === "interactive"
     ? preloader.classList.add("show")
     : preloader.classList.add("remove");
 };
