@@ -15,9 +15,11 @@ console.log(
 
 const preloader = document.querySelector(".preloader");
 document.onreadystatechange = () => {
-  document.readyState === "loading"
-    ? preloader.classList.add("show")
-    : preloader.classList.add("remove");
+  switch (document.readyState) {
+    case "loading":
+      preloader.classList.add("show");
+      break;
+  }
 };
 
 const textIntroAnimation = document.querySelector(".landing-section .text"),
@@ -52,6 +54,30 @@ colorsList.forEach((li) => {
   });
 });
 
+let incrementFontCounter = 1;
+const introPargraph = document.body.querySelector(".landing-section .text > p");
+let currentFontSize = parseInt(
+  window.getComputedStyle(introPargraph).getPropertyValue("font-size")
+);
+
+const incrementBtn = document.querySelector(".setting-box .btns .increment");
+const decrementBtn = document.querySelector(".setting-box .btns .decrement");
+const resetBtn = document.querySelector(".setting-box .btns .reset");
+
+incrementBtn.addEventListener("click", () => {
+  introPargraph.style.fontSize =
+    currentFontSize + incrementFontCounter++ + "px";
+});
+
+decrementBtn.addEventListener("click", () => {
+  introPargraph.style.fontSize =
+    currentFontSize + incrementFontCounter-- + "px";
+});
+
+resetBtn.addEventListener("click", () => {
+  introPargraph.style.fontSize = 20 + "px";
+});
+
 /* Subscribe Form Validation */
 const subscribeVaild = document.querySelector(".subscribe-btn");
 document.querySelector(".subscribe-btn").onclick = function (event) {
@@ -82,7 +108,7 @@ function increaseNums(element) {
     if (element.textContent === goal) {
       clearInterval(counter);
     }
-  }, 10 / goal);
+  }, 100 / goal);
 }
 
 const scroolBtn = document.querySelector(".to-top-butotn"),
