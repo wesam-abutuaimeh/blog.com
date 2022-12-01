@@ -15,10 +15,8 @@ console.log(
 
 const preloader = document.querySelector(".preloader");
 document.onreadystatechange = () => {
-  switch (document.readyState) {
-    case "loading":
-      preloader.classList.add("show");
-      break;
+  if (document.readyState === "loading") {
+    preloader.classList.add("show");
   }
 };
 
