@@ -14,7 +14,7 @@ console.log(
 );
 
 const preloader = document.querySelector(".preloader");
-document.onreadystatechange = () => {
+window.onload = document.onreadystatechange = () => {
   if (document.readyState === "loading") {
     preloader.classList.add("show");
   }
@@ -179,7 +179,7 @@ loginBtnInBlog.addEventListener("click", function () {
     window.open("../Html/login.html");
   }, 2000);
 });
-
+e;
 foEvents("Dec 31 ,2023 23:59:59");
 
 const pageRoot = document.documentElement;
