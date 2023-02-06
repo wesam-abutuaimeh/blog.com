@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
@@ -14,8 +14,10 @@
   <!-- Main Css-->
   <link rel="stylesheet" href="../CSS/main.css" />
   <!--Font Awesome-->
-  <script src="https://kit.fontawesome.com/1f6f83c4f4.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../CSS/all.min.css" />
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,14 +26,12 @@
   <title>Wesam | Blog ~ Awesome code</title>
   <!--Favicon-->
   <link rel="shortcut icon" href="../Media/tab-icon.jpg" type="image/x-icon" />
-
 </head>
 
 <body>
   <!-- scroll bar to evalute reading average in website -->
   <div class="scroll-bar"></div>
   <!-- End scroll bar -->
-
   <!-- Start Loading divs -->
   <div class="preloader">
     <div class="waterfall">
@@ -43,7 +43,6 @@
     </div>
   </div>
   <!-- End Loading divs -->
-
   <!-- Start Setting Box  -->
   <div class="setting-box">
     <div class="icon">
@@ -62,28 +61,43 @@
         </ul>
       </div>
     </div>
-
     <div class="setting-box-container">
       <h4>Theme Color</h2>
         <div class="toggle-btn"></div>
     </div>
-
     <div class="setting-box-container">
-      <h4>Intro Paragraph Font Size Control</h4>
-      <div class="btns"><span class="increment">+</span><span class="decrement">-</span><span class="reset"
-          title="reset to default font size setting">🔃</span></div>
+      <h4>Font Options</h4>
+      <select class="font">
+        <option value="Open Sans">Open Sans</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Roboto">Roboto</option>
+      </select>
     </div>
-
-    <h4 class="setting-box-status">Under Developement</h4>
+    <div class="setting-box-container">
+      <h4>Font Size Options</h4>
+      <select class="size">
+        <option value="16">16</option>
+        <option value="18">18</option>
+        <option value="20">20</option>
+        <option value="22">22</option>
+        <option value="24">24</option>
+        <option value="26">26</option>
+        <option value="28">28</option>
+        <option value="30">30</option>
+      </select>
+    </div>
+    <div class="setting-box-container reset">
+      <h4>Reset All Options</h4>
+      <i class="fa-solid fa-power-off"></i>
+    </div>
+    <h4 class="setting-box-status">$Wesam Abutaima</h4>
   </div>
   <!-- End Setting Box  -->
-
   <!-- To Top Button -->
   <button id="to-top-butotn" class="to-top-butotn">
     <i class="fas fa-angle-double-up"></i>
   </button>
   <!-- To Top Button -->
-
   <!--Start Header-->
   <header>
     <nav class="header" id="header">
@@ -143,7 +157,6 @@
     </nav>
   </header>
   <!--End Header-->
-
   <!--Start Landing Section-->
   <section class="landing-section">
     <div class="container">
@@ -164,7 +177,6 @@
     </div>
   </section>
   <!--End Landing Section-->
-
   <!-- Start article section -->
   <section class="articles-container" id="article">
     <div class="section-header">My Articles</div>
@@ -268,7 +280,6 @@
     </div>
   </section>
   <!-- End article section -->
-
   <div class="spikes"></div>
   <!-- Start Gallery section -->
   <section class="gallery-container" id="gallery-container">
@@ -307,7 +318,6 @@
     </div>
   </section>
   <!-- End Gallery Section -->
-
   <!-- Start Features Section -->
   <section class="features" id="features">
     <div class="section-header">My Features</div>
@@ -363,7 +373,6 @@
     </div>
   </section>
   <!-- End Features Section -->
-
   <!-- Start testimonials Section -->
   <section class="testimonials" id="testimonials">
     <div class="section-header">Testimonials</div>
@@ -472,7 +481,6 @@
     </div>
   </section>
   <!-- End testimonials Section -->
-
   <!-- Start Team Members Section -->
   <section class="team-member" id="team-member">
     <div class="section-header">Team Members</div>
@@ -525,7 +533,6 @@
     </div>
   </section>
   <!-- End Team Members Section -->
-
   <!-- Start Services Section-->
   <div class="spikes"></div>
   <section class="services" id="services">
@@ -576,7 +583,6 @@
     </div>
   </section>
   <!-- End Services Section -->
-
   <!-- Start Skills Section -->
   <section class="skills" id="skills">
     <div class="section-header">Our Skills</div>
@@ -617,7 +623,6 @@
     </div>
   </section>
   <!-- End Skills Section -->
-
   <!-- Start How It Work Section -->
   <section class="how-it-work" id="how-it-work">
     <div class="section-header">How It Work!</div>
@@ -658,7 +663,6 @@
     </div>
   </section>
   <!-- End How It Work Section -->
-
   <!-- Start LATEST EVENTS Section -->
   <section class="lastest-events" id="lastest-events">
     <div class="section-header">Latest Events</div>
@@ -708,7 +712,6 @@
     <img src="../Media/dots.png" alt="dots" class="down-dots" />
   </section>
   <!-- End LATEST EVENTS Section -->
-
   <!-- Start Pricing Plan Section -->
   <section class="pricing-plan" id="pricing-plan">
     <div class="section-header">Pricing Plans</div>
@@ -761,7 +764,6 @@
     <img src="../Media/dots.png" alt="dots" class="down-dots" />
   </section>
   <!-- End Pricing Plan Section -->
-
   <!-- Start Top Video Section -->
   <section class="top-video" id="top-video">
     <div class="section-header">Top Video</div>
@@ -789,7 +791,6 @@
     </div>
   </section>
   <!-- End Top Video Section -->
-
   <!-- Start Stats Section -->
   <section class="stats" id="stats">
     <div class="section-header">Our Awesome Stats</div>
@@ -817,7 +818,6 @@
     </div>
   </section>
   <!-- End Stats Section -->
-
   <!--Start Contact Form-->
   <section class="contact-form" id="contact-form">
     <div class="info">
@@ -852,7 +852,6 @@
           <textarea class="user-message" name="user-message" id="user-message"
             placeholder="Tell Us About You Needs"></textarea>
         </div>
-
         <input type="submit" value="send" />
       </form>
     </div>
@@ -866,18 +865,17 @@
           <h3>WesamBlog</h3>
           <ul class="social">
             <li>
-              <a href="https://api.whatsapp.com/send?phone=970598844683" title="Social Media" target="_blank"
-                class="facebook">
+              <a href="https://api.whatsapp.com/send?phone=970598844683" title="Social Media" class="facebook">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/Wesam_Abutaima" title="Social Media" target="_blank" class="twitter">
+              <a href="https://twitter.com/Wesam_Abutaima" title="Social Media" class="twitter">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://t.me/Wesam_Abutaima" title="Social Media" target="_blank" class="instagram">
+              <a href="https://t.me/Wesam_Abutaima" title="Social Media" class="instagram">
                 <i class="fa-brands fa-telegram"></i>
               </a>
             </li>
@@ -894,18 +892,18 @@
               <a href="https://github.com/wesam-abutuaimeh" target="_black">A project from my gallery 1</a>
             </li>
             <li>
-              <a href="https://wesam-abutuaimeh.github.io/todolist-app/html" target="_blank">A project from my gallery
+              <a href="https://wesam-abutuaimeh.github.io/todolist-app/html">A project from my gallery
                 2</a>
             </li>
             <li>
-              <a href="https://mawdee3.com/" target="_blank">A project from my gallery 3</a>
+              <a href="https://mawdee3.com/">A project from my gallery 3</a>
             </li>
             <li>
-              <a href="https://wesam-abutuaimeh.github.io/Quiz-App/html/" target="_blank">A project from my gallery
+              <a href="https://wesam-abutuaimeh.github.io/Quiz-App/html/">A project from my gallery
                 4</a>
             </li>
             <li>
-              <a href="https://github.com/wesam-abutuaimeh/JavaScript-Summarization-" target="_blank">A project from my
+              <a href="https://github.com/wesam-abutuaimeh/JavaScript-Summarization-">A project from my
                 gallery 5</a>
             </li>
           </ul>
@@ -940,7 +938,7 @@
       </div>
       <p class="copyright">
         made with<span> &lt;3 </span>by developer
-        <span class="author"><a href="https://api.whatsapp.com/send?phone=970598844683" target="_blank">Wesam Abu
+        <span class="author"><a href="https://api.whatsapp.com/send?phone=970598844683">Wesam Abu
             Taima</a></span>
         &copy;
         <span class="copyright-year"></span>

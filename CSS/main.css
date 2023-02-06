@@ -58,6 +58,9 @@ ul {
 a {
   text-decoration: none;
 }
+input {
+  outline: none;
+}
 ::selection {
   color: white;
   background-color: #347bb4;
@@ -482,7 +485,7 @@ i.fas.fa-blog {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  cursor: not-allowed;
+  cursor: pointer;
 }
 .colors-options li:first-child {
   background-color: #2196f3;
@@ -537,7 +540,22 @@ i.fas.fa-blog {
   translate: 0 -50%;
   writing-mode: vertical-lr;
   white-space: nowrap;
-} /* End Setting Box Style */ /* Start landing Sectio Style*/
+}
+.setting-box .setting-box-container select {
+  background-color: #ededed;
+  padding: 4px 8px;
+  border: none;
+  outline: none;
+  border-radius: 11px;
+  margin: 15px auto;
+}
+.setting-box .setting-box-container i {
+  font-size: 16px;
+  cursor: pointer;
+  margin: 15px auto;
+  display: block;
+}
+/* End Setting Box Style */ /* Start landing Sectio Style*/
 .landing-section {
   position: relative;
 }
@@ -1924,10 +1942,10 @@ p {
   display: block;
   background-color: #d9d9d9;
   border: none;
-  margin: 0 auto 5px auto;
+  margin: 5px auto 5px auto;
   width: 400px;
   border-radius: 6px;
-  padding: 20px;
+  padding: 0 10px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -1937,9 +1955,7 @@ p {
   position: relative;
   top: 0;
   right: 163px;
-}
-.contact-form form input:focus {
-  outline: none;
+  text-transform: capitalize;
 }
 .contact-form form input:focus::placeholder {
   opacity: 0;
@@ -1959,10 +1975,10 @@ p {
   background-color: #d9d9d9;
   border-bottom: 1px solid #ddd;
   border: none;
-  margin: 10px auto 10px auto;
+  margin: 5px auto 5px auto;
   width: 400px;
   height: 200px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -2291,28 +2307,18 @@ footer .what-i-am {
   }
 }
 .preloader {
-  position: relative;
-  display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, #7450fe, #21d397);
   overflow: hidden;
-}
-.preloader.show {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999999;
+  z-index: 1000;
   pointer-events: none;
-}
-.preloader.remove {
   display: none;
-  pointer-events: auto;
-} /* End Loading animation Style */ /* Start Button To Choose Theme Style */
+}
+/* End Loading animation Style */ /* Start Button To Choose Theme Style */
 .toggle-btn {
   background-color: #ededed;
   width: 170px;
@@ -2402,7 +2408,7 @@ form input {
   border: 1px #999 solid;
   border-radius: 6px;
   padding-left: 15px;
-  color: #fafafa;
+  color: var(--main-color);
   caret-color: #0077ff;
 }
 .fa-eye {

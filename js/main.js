@@ -1,12 +1,10 @@
-"use-strict";
-import { foEvents } from "./module.js";
+import { forEvents } from "./module.js";
 
 console.log(
   "%cWelcom To Wesam%cBlog",
   "color:red; font-size:40px",
   "background-color:blue;color:white; font-size:40px"
 );
-
 console.log(
   "%cStop! %c\nThis is a browser feature intended for developers. ",
   "-webkit-text-fill-color:red; -webkit-text-stroke: 1px #333; font-size:40px;",
@@ -15,65 +13,46 @@ console.log(
 
 const preloader = document.querySelector(".preloader");
 window.onload = document.onreadystatechange = () => {
-  if (document.readyState === "loading") {
-    preloader.classList.add("show");
-  }
+  document.readyState === "loading"
+    ? (preloader.style.display = "flex")
+    : (preloader.style.display = "none");
 };
 
-const textIntroAnimation = document.querySelector(".landing-section .text"),
-  imageIntroAnimation = document.querySelector(".landing-section .image > img");
-window.addEventListener("load", (e) => {
-  textIntroAnimation.classList.add("active");
-  imageIntroAnimation.classList.add("active");
+const introAnimation = {
+  textAnimation: document.querySelector(".landing-section .text"),
+  imageAnimation: document.querySelector(".landing-section .image > img"),
+};
+window.addEventListener("load", () => {
+  introAnimation.textAnimation.classList.add("active");
+  introAnimation.imageAnimation.classList.add("active");
 });
 
-/* colors option from setting box */
-const settingBox = document.querySelector(".setting-box"),
-  getMood = window.localStorage.getItem("mode");
+/* setting box Options */
+const settingBox = document.querySelector(".setting-box");
+const getMood = window.localStorage.getItem("mode");
+const font = document.querySelector(".font");
+const size = document.querySelector(".size");
+const reset = document.querySelector(".fa-power-off");
 document.querySelector(".icon").onclick = () => {
   settingBox.classList.toggle("show");
   icon.classList.toggle("fa-spin");
 };
-if (localStorage.getItem("colors")) {
-  document.documentElement.style.setProperty(
-    "--main-color",
-    localStorage.getItem("colors")
-  );
-}
-
-let colorsList = document.querySelectorAll(".colors-options li");
-colorsList.forEach((li) => {
-  li.addEventListener("click", (event) => {
-    document.documentElement.style.setProperty(
-      "--main-color",
-      event.target.dataset.color
-    );
-    localStorage.setItem("colors", event.target.dataset.color);
-  });
+const settings = JSON.parse(localStorage.getItem("settings")) || {};
+document.body.style.fontFamily = settings.font || "";
+document.body.style.fontSize = settings.size || "";
+font.addEventListener("change", () => {
+  settings.font = font.value;
+  localStorage.setItem("settings", JSON.stringify(settings));
+  document.body.style.fontFamily = font.value;
 });
-
-let incrementFontCounter = 1;
-const introPargraph = document.body.querySelector(".landing-section .text > p");
-let currentFontSize = parseInt(
-  window.getComputedStyle(introPargraph).getPropertyValue("font-size")
-);
-
-const incrementBtn = document.querySelector(".setting-box .btns .increment");
-const decrementBtn = document.querySelector(".setting-box .btns .decrement");
-const resetBtn = document.querySelector(".setting-box .btns .reset");
-
-incrementBtn.addEventListener("click", () => {
-  introPargraph.style.fontSize =
-    currentFontSize + incrementFontCounter++ + "px";
+size.addEventListener("change", () => {
+  settings.size = `${size.value}px`;
+  localStorage.setItem("settings", JSON.stringify(settings));
+  document.body.style.fontSize = `${size.value}px`;
 });
-
-decrementBtn.addEventListener("click", () => {
-  introPargraph.style.fontSize =
-    currentFontSize + incrementFontCounter-- + "px";
-});
-
-resetBtn.addEventListener("click", () => {
-  introPargraph.style.fontSize = 20 + "px";
+reset.addEventListener("click", () => {
+  localStorage.clear();
+  location.reload();
 });
 
 /* Subscribe Form Validation */
@@ -162,6 +141,24 @@ if (getMood && getMood === "dark") {
   toggleBtn.classList.add("active");
 }
 
+let colorsList = Array.from(document.querySelectorAll(".colors-options ul li"));
+if (window.localStorage.getItem("color")) {
+  document.body.style.setProperty(
+    "--main-color",
+    window.localStorage.getItem("color")
+  );
+}
+colorsList.forEach((li) => {
+  li.addEventListener("click", (e) => {
+    colorsList.forEach((li) => {
+      li.classList.remove("active");
+    });
+    e.target.classList.add("active");
+    window.localStorage.setItem("color", e.target.dataset.color);
+    document.body.style.setProperty("--main-color", e.target.dataset.color);
+  });
+});
+
 const loginBtnInBlog = document.querySelector(".login-btn ");
 loginBtnInBlog.addEventListener("click", function () {
   const popup = document.createElement("div");
@@ -171,7 +168,7 @@ loginBtnInBlog.addEventListener("click", function () {
   const p = document.createElement("p");
   p.style.cssText =
     "position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); ";
-  p.appendChild(document.createTextNode("Soon ... 😀"));
+  p.appendChild(document.createTextNode("This is just For Train ... 😀"));
   popup.appendChild(p);
   let el = body.appendChild(popup);
   setTimeout(() => {
@@ -180,7 +177,7 @@ loginBtnInBlog.addEventListener("click", function () {
   }, 2000);
 });
 
-foEvents("Dec 31 ,2023 23:59:59");
+forEvents("Dec 31 ,2023 23:59:59");
 
 const pageRoot = document.documentElement;
 const scrollBar = document.querySelector(".scroll-bar");

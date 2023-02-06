@@ -1,7 +1,7 @@
 "use-strict";
 
 // Function For Traking Events
-export function foEvents(startTrakingDate) {
+export function forEvents(startTrakingDate) {
   const targetDate = new Date(startTrakingDate).getTime();
   const interval = setInterval(() => {
     const currentDate = new Date().getTime(); // Start Date
