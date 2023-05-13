@@ -2316,7 +2316,6 @@ footer .what-i-am {
   overflow: hidden;
   z-index: 1000;
   pointer-events: none;
-  display: none;
 }
 /* End Loading animation Style */ /* Start Button To Choose Theme Style */
 .toggle-btn {
